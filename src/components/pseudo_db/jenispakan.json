@@ -1,0 +1,26 @@
+[
+  {
+    "idJenisPakan": "JP001",
+    "namaJenisPakan": "Konsentrat Protein Tinggi",
+    "deskripsi": "Pakan lengkap dengan kandungan protein tinggi, difokuskan untuk penggemukan dan laktasi.",
+    "stokMinimalPakan": 750.0
+  },
+  {
+    "idJenisPakan": "JP002",
+    "namaJenisPakan": "Pakan Hijauan Kering (Hay)",
+    "deskripsi": "Rumput atau leguminosa kering sebagai sumber serat utama untuk kesehatan rumen.",
+    "stokMinimalPakan": 1500.0
+  },
+  {
+    "idJenisPakan": "JP003",
+    "namaJenisPakan": "Mineral dan Premix",
+    "deskripsi": "Campuran vitamin dan mineral untuk menjaga keseimbangan nutrisi harian.",
+    "stokMinimalPakan": 100.0
+  },
+  {
+    "idJenisPakan": "JP004",
+    "namaJenisPakan": "Pakan Pengganti Susu (CMR)",
+    "deskripsi": "Pakan cair khusus untuk anak sapi/kambing/domba yang baru lahir.",
+    "stokMinimalPakan": 50.0
+  }
+]

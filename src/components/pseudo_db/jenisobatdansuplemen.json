@@ -1,0 +1,27 @@
+[
+    {
+      "idJenisObatdanSuplemen": "JO001",
+      "namaJenis": "Vitamin",
+      "deskripsi": "Produk yang mengandung vitamin untuk meningkatkan kesehatan ternak."
+    },
+    {
+      "idJenisObatdanSuplemen": "JO002",
+      "namaJenis": "Antibiotik",
+      "deskripsi": "Produk untuk pencegahan dan pengobatan infeksi pada ternak."
+    },
+    {
+      "idJenisObatdanSuplemen": "JO003",
+      "namaJenis": "Mineral",
+      "deskripsi": "Produk yang menyediakan mineral penting bagi pertumbuhan ternak."
+    },
+    {
+      "idJenisObatdanSuplemen": "JO004",
+      "namaJenis": "Probiotik",
+      "deskripsi": "Produk yang mendukung kesehatan pencernaan ternak."
+    },
+    {
+      "idJenisObatdanSuplemen": "JO005",
+      "namaJenis": "Anti-parasit",
+      "deskripsi": "Produk untuk pencegahan dan pengobatan parasit pada ternak."
+    }
+  ]

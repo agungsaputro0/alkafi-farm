@@ -1,0 +1,18 @@
+[
+  { "idSatuan": "SO001", "namaSatuan": "tablet" },
+  { "idSatuan": "SO002", "namaSatuan": "kapsul" },
+  { "idSatuan": "SO003", "namaSatuan": "mililiter" },
+  { "idSatuan": "SO004", "namaSatuan": "liter" },
+  { "idSatuan": "SO005", "namaSatuan": "miligram" },
+  { "idSatuan": "SO006", "namaSatuan": "gram" },
+  { "idSatuan": "SO007", "namaSatuan": "kilogram" },
+  { "idSatuan": "SO008", "namaSatuan": "botol" },
+  { "idSatuan": "SO009", "namaSatuan": "box" },
+  { "idSatuan": "SO010", "namaSatuan": "sachet" },
+  { "idSatuan": "SO011", "namaSatuan": "strip" },
+  { "idSatuan": "SO012", "namaSatuan": "ampul" },
+  { "idSatuan": "SO013", "namaSatuan": "vial" },
+  { "idSatuan": "SO014", "namaSatuan": "tube" },
+  { "idSatuan": "SO015", "namaSatuan": "pot" },
+  { "idSatuan": "SO016", "namaSatuan": "unit" }
+]

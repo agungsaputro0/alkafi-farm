@@ -1,30 +1,29 @@
 import React from "react";
 
-interface ButtonProps {
-  message: string;                 
-  variant?: string;                 
-  onClick?: () => void;            
-  type?: "button" | "submit" | "reset"; 
-  disabled?: boolean;             
-  children?: React.ReactNode;      
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  message?: React.ReactNode;       // teks alternatif bila children kosong
+  variant?: string;                // class utilitas opsional (misal: "bg-black")
 }
 
+/**
+ * Button fleksibel:
+ * - menerima semua atribut button standar (onClick, type, disabled, className, dsb)
+ * - variant = class utilitas default (misal untuk bg color)
+ * - className akan digabungkan bersama variant
+ */
 const Button: React.FC<ButtonProps> = ({
   message,
   variant = "bg-black",
-  onClick = () => {},
-  type = "button",
-  disabled = false,
-  children
+  className = "",
+  children,
+  ...rest // menangkap onClick, type, disabled, dsb.
 }) => {
   return (
     <button
-      onClick={onClick}
-      className={`h-10 px-6 font-semibold rounded-md ${variant} text-white sm:h-12 sm:px-8`}
-      type={type}
-      disabled={disabled}
+      {...rest}
+      className={`h-10 px-6 font-semibold rounded-full ${variant} sm:h-12 sm:px-8 ${className}`}
     >
-      {children || message}
+      {children ?? message}
     </button>
   );
 };

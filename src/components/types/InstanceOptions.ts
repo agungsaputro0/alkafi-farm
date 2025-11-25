@@ -1,0 +1,15 @@
+export const instanceOptions = [
+  { value: "1", label: "Direktorat Jenderal Anggaran" },
+  { value: "2", label: "Direktorat Jenderal Pajak" },
+  { value: "3", label: "Direktorat Jenderal Bea dan Cukai" },
+  { value: "4", label: "Direktorat Jenderal Perimbangan Keuangan" },
+  { value: "5", label: "Direktorat Jenderal Kekayaan Negara" },
+  { value: "6", label: "Direktorat Jenderal Perbendaharaan" },
+  { value: "7", label: "Direktorat Jenderal Stabilitas dan Pengembangan Sektor Keuangan" },
+  { value: "8", label: "Direktorat Jenderal Strategi Ekonomi dan Fiskal" },
+  { value: "9", label: "Direktorat Jenderal Pengelolaan Pembiayaan dan Risiko" },
+  { value: "10", label: "Badan Teknologi Informasi dan Intelijen Keuangan" },
+  { value: "11", label: "Badan Pendidikan dan Pelatihan Keuangan" },
+  { value: "12", label: "Inspektorat Jenderal" },
+  { value: "13", label: "Sekretariat Jenderal" },
+];

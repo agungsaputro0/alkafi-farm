@@ -1,0 +1,24 @@
+[
+  { "idRasHewanTernak": "RHT001", "idJenisHewanTernak": "JHT001", "namaRasHewanTernak": "Bali", "deskripsi": "Sapi lokal asli Indonesia, dikenal sebagai sapi pekerja dan potong, warna merah bata, daya tahan tinggi." },
+  { "idRasHewanTernak": "RHT002", "idJenisHewanTernak": "JHT001", "namaRasHewanTernak": "Limousin", "deskripsi": "Sapi potong impor yang sangat populer di Indonesia, berotot padat dan memiliki pertumbuhan bobot harian yang cepat (ADG tinggi)." },
+  { "idRasHewanTernak": "RHT003", "idJenisHewanTernak": "JHT001", "namaRasHewanTernak": "Simmental", "deskripsi": "Sapi potong impor dengan postur besar dan kokoh, dikenal sebagai penghasil daging unggul dengan tulang yang besar." },
+  { "idRasHewanTernak": "RHT004", "idJenisHewanTernak": "JHT001", "namaRasHewanTernak": "PO (Peranakan Ongole)", "deskripsi": "Sapi lokal hasil persilangan Ongole India, cirinya berpunuk, tahan panas, dan kuat sebagai sapi pekerja dan potong." },
+  { "idRasHewanTernak": "RHT005", "idJenisHewanTernak": "JHT001", "namaRasHewanTernak": "Madura", "deskripsi": "Sapi lokal Indonesia, ukurannya kecil tetapi persentase karkas tinggi dan daging rendah lemak." },
+  { "idRasHewanTernak": "RHT006", "idJenisHewanTernak": "JHT001", "namaRasHewanTernak": "Brahman", "deskripsi": "Sapi potong keturunan Zebu India, berciri punuk besar dan gelambir, sangat tahan terhadap iklim panas tropis." },
+  { "idRasHewanTernak": "RHT007", "idJenisHewanTernak": "JHT001", "namaRasHewanTernak": "Brahman Cross (BX)", "deskripsi": "Persilangan Sapi Brahman yang dikembangkan untuk menghasilkan bobot besar, adaptif, dan pertumbuhan cepat di iklim tropis." },
+  { "idRasHewanTernak": "RHT008", "idJenisHewanTernak": "JHT001", "namaRasHewanTernak": "Friesian Holstein (FH)", "deskripsi": "Sapi perah dengan produksi susu tertinggi, mudah dikenali dari warna hitam-putih, namun kurang tahan panas." },
+
+  { "idRasHewanTernak": "RHT009", "idJenisHewanTernak": "JHT002", "namaRasHewanTernak": "Peranakan Etawa (PE)", "deskripsi": "Kambing dwiguna (susu dan daging), hasil persilangan Etawa dan Kambing Kacang, postur tinggi dan telinga terkulai." },
+  { "idRasHewanTernak": "RHT010", "idJenisHewanTernak": "JHT002", "namaRasHewanTernak": "Boer", "deskripsi": "Kambing pedaging impor dari Afrika Selatan, terkenal dengan pertumbuhan cepat dan hasil daging (karkas) yang tinggi." },
+  { "idRasHewanTernak": "RHT011", "idJenisHewanTernak": "JHT002", "namaRasHewanTernak": "Jawarandu", "deskripsi": "Persilangan antara Kambing PE dan Kambing Kacang, dikenal juga sebagai Bligon, digunakan untuk daging dan susu." },
+  { "idRasHewanTernak": "RHT012", "idJenisHewanTernak": "JHT002", "namaRasHewanTernak": "Kacang", "deskripsi": "Kambing pedaging lokal asli Indonesia, postur kecil, mudah beradaptasi, dan memiliki tingkat reproduksi yang tinggi." },
+  { "idRasHewanTernak": "RHT013", "idJenisHewanTernak": "JHT002", "namaRasHewanTernak": "Saanen", "deskripsi": "Kambing perah murni asal Swiss, bulu putih pendek, populer di Indonesia karena produksi susu yang tinggi." },
+  { "idRasHewanTernak": "RHT014", "idJenisHewanTernak": "JHT002", "namaRasHewanTernak": "Etawa (Jamnapari)", "deskripsi": "Kambing asal India, leluhur dari Kambing PE, dikenal sebagai penghasil susu dan memiliki postur sangat besar." },
+  { "idRasHewanTernak": "RHT015", "idJenisHewanTernak": "JHT002", "namaRasHewanTernak": "Gembrong", "deskripsi": "Kambing lokal dari Bali yang langka, cirinya berbulu panjang di kepala dan leher (terutama jantan)." },
+
+  { "idRasHewanTernak": "RHT016", "idJenisHewanTernak": "JHT003", "namaRasHewanTernak": "Garut (Priangan)", "deskripsi": "Domba lokal unggulan dari Jawa Barat, postur besar, sering untuk aduan, dan dikenal karena kesuburannya." },
+  { "idRasHewanTernak": "RHT017", "idJenisHewanTernak": "JHT003", "namaRasHewanTernak": "Ekor Tipis (DET)", "deskripsi": "Domba lokal paling banyak, dikenal juga sebagai Domba Gembel, sangat adaptif dan menjadi dasar persilangan domba lokal." },
+  { "idRasHewanTernak": "RHT018", "idJenisHewanTernak": "JHT003", "namaRasHewanTernak": "Batur Banjarnegara", "deskripsi": "Domba pedaging hasil persilangan, berpostur gemuk dan bobot yang sangat besar, sangat baik untuk produksi karkas." },
+  { "idRasHewanTernak": "RHT019", "idJenisHewanTernak": "JHT003", "namaRasHewanTernak": "Texel", "deskripsi": "Domba pedaging asal Belanda, yang beradaptasi di Wonosobo, cirinya bulu wol tebal dan hasil karkas yang tinggi." },
+  { "idRasHewanTernak": "RHT020", "idJenisHewanTernak": "JHT003", "namaRasHewanTernak": "Ekor Gemuk (DEG)", "deskripsi": "Domba lokal dengan ciri khas timbunan lemak di bagian ekor, banyak dibudidayakan di wilayah Indonesia Timur." }
+]

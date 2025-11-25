@@ -9,7 +9,7 @@ const achievements = [
 
 const OurAchievements = () => {
   return (
-    <div className="mt-20 bg-green-800 py-10 flex flex-col items-center min-w-screen">
+    <div className="bg-green-800 py-10 flex flex-col items-center min-w-screen">
       <h2 className="text-white text-2xl font-semibold mb-8">Pencapaian Kami</h2>
       <div className="flex flex-wrap justify-center gap-4">
         {achievements.map((item, index) => (

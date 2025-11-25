@@ -11,6 +11,11 @@ interface Kategori {
     nama: string;
 }
 
+interface Instansi {
+    id: string;
+    name: string;
+}
+
 interface Provinsi {
     id: string;
     name: string;
@@ -82,6 +87,39 @@ export const useFetchKategori = () => {
     return { provinsi, loading, error };
   };
 
+  export const useFetchInstansi = (searchTerm: string) => {
+    const [instansi, setInstansi] = useState<Instansi[]>([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState<string | null>(null);
+  
+    useEffect(() => {
+      const fetchInstansi = async () => {
+        setLoading(true);
+        try {
+          // Mengirimkan query search parameter ke backend
+          const response = await axios.get(`${baseURL}/get_instansi`, {
+            params: { search: searchTerm } // menggunakan params untuk query string
+          });
+  
+          // Menyimpan data instansi yang diterima
+          setInstansi(response.data);
+          setLoading(false);
+        } catch (err) {
+          // Menangani error jika gagal mengambil data
+          setError('Failed to fetch instansi');
+          setLoading(false);
+        }
+      };
+  
+      // Memastikan hanya melakukan pencarian jika searchTerm memiliki panjang minimal 3 karakter
+      if (searchTerm.length >= 3 || searchTerm.length === 0) {
+        fetchInstansi();
+      }
+    }, [searchTerm]); // Melakukan fetch setiap kali searchTerm berubah
+  
+    return { instansi, loading, error };
+  };
+
   export const useFetchKabupaten = (provinsiId: string | null, searchTerm: string) => {
     const [kabupaten, setKabupaten] = useState<Kabupaten[]>([]);
     const [loading, setLoading] = useState(false); // Default tidak loading
@@ -147,7 +185,7 @@ export const useFetchKecamatan = (kabupatenId: string | null, searchTerm: string
   return { kecamatan, loading, error };
 }
 
-const handleSignUpUser = async (UserData: any) => {
+export const handleSignUpUser = async (UserData: any) => {
     try {
         const response = await axios.post<SignUpResponse>(`${baseURL}/user_registration`, UserData);
         return response.data.message;
@@ -156,14 +194,34 @@ const handleSignUpUser = async (UserData: any) => {
     }
 };
 
+export const handleSignUpUserBankSampah = async (formData: FormData) => {
+    try {
+      const response = await axios.post(`${baseURL}/bank_sampah_registration`, formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+        withCredentials: true,  // Jika perlu cookie atau session
+      });
+      return response.data.message;
+    } catch (error: any) {
+      console.error("Error while submitting form:", error);
+      const message = error?.response?.data?.message || error.message || "Gagal mengirim data laporan pembayaran.";
+      throw new Error(message);
+    }
+  };
+
 export const HandleSignUp = async (
     selectedIndex: number | null,
     data: any,
-    selectedKategori: string
+    selectedKategori: string,
+    bankSampahData: FormData | null
 ) => {
     try {
         if (selectedIndex === 1) {
-
+          if (!bankSampahData) {
+            throw new Error("Data bank sampah tidak boleh kosong");
+          }
+          return await handleSignUpUserBankSampah(bankSampahData);
         } 
         else if (selectedIndex === 2) {
                 
@@ -172,14 +230,14 @@ export const HandleSignUp = async (
 
         } 
         else if (selectedIndex === 4) {
-            const Nasabah = {
+            const DataForSend = {
                 nama: data.nama,
                 email: data.email,
                 nomor_kontak: data.nomor_kontak,
                 password: data.password,
                 kategori: selectedKategori,
             };
-            return await handleSignUpUser(Nasabah);
+            return await handleSignUpUser(DataForSend);
         } else {
             throw new Error("Kategori tidak dipilih atau tidak valid");
         }

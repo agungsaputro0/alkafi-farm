@@ -1,0 +1,18 @@
+[
+  { "idSatuan": "SP001", "namaSatuan": "gram" },
+  { "idSatuan": "SP002", "namaSatuan": "kilogram" },
+  { "idSatuan": "SP003", "namaSatuan": "ton" },
+  { "idSatuan": "SP004", "namaSatuan": "liter" },
+  { "idSatuan": "SP005", "namaSatuan": "mililiter" },
+  { "idSatuan": "SP006", "namaSatuan": "sak" },
+  { "idSatuan": "SP007", "namaSatuan": "karung" },
+  { "idSatuan": "SP008", "namaSatuan": "ember" },
+  { "idSatuan": "SP009", "namaSatuan": "drum" },
+  { "idSatuan": "SP010", "namaSatuan": "kantong" },
+  { "idSatuan": "SP011", "namaSatuan": "botol" },
+  { "idSatuan": "SP012", "namaSatuan": "paket" },
+  { "idSatuan": "SP013", "namaSatuan": "bal" },
+  { "idSatuan": "SP014", "namaSatuan": "timba" },
+  { "idSatuan": "SP015", "namaSatuan": "unit" },
+  { "idSatuan": "SP016", "namaSatuan": "porsi" }
+]

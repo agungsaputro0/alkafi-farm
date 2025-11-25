@@ -5,6 +5,13 @@
   text-align: center;
 }
 
+@font-face {
+  font-family: 'Spring';
+  src: url('./assets/font/Farmhouse.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .slick-list {
   height: 245px!important;
 }
@@ -56,3 +63,4 @@
 .read-the-docs {
   color: #888;
 }
+

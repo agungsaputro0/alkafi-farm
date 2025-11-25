@@ -1,0 +1,232 @@
+[
+  {
+    "idMonitoring": "MR001",
+    "idHewanTernak": "HT001",
+    "jenisCatatan": "Birahi",
+    "tanggalPencatatan": "2025-01-10",
+    "detail": "Hewan menunjukkan gelisah, vulva bengkak, lendir jernih, suara meningkat, sering menaiki hewan lain. Nafsu makan masih normal, gerakan aktif.",
+    "petugas": "PG001",
+    "waktuRekam": "2025-01-10T08:10:00Z",
+    "hasilAnalisisAI": "Prediksi waktu ovulasi optimal 24–36 jam setelah tanda birahi. Sistem merekomendasikan pengawasan intensif dan persiapan kawin/inseminasi. Potensi keberhasilan pembuahan 80% jika inseminasi tepat waktu."
+  },
+  {
+    "idMonitoring": "MR002",
+    "idHewanTernak": "HT001",
+    "jenisCatatan": "Kawin/Inseminasi",
+    "tanggalPencatatan": "2025-01-12",
+    "detail": "Inseminasi buatan menggunakan semen pejantan A-12. Posisi serviks baik, lendir serviks jernih, hewan kooperatif. Prosedur berjalan lancar tanpa stres terlihat.",
+    "petugas": "PG004",
+    "waktuRekam": "2025-01-12T09:00:00Z",
+    "hasilAnalisisAI": "Analisis AI: peluang keberhasilan inseminasi 78%. Sistem menandai hewan sebagai 'Sedang Hamil (Prediksi)'. Rekomendasi pemantauan kehamilan 2 minggu pertama untuk memastikan implantasi embrio."
+  },
+  {
+    "idMonitoring": "MR003",
+    "idHewanTernak": "HT001",
+    "jenisCatatan": "Kehamilan",
+    "tanggalPencatatan": "2025-02-05",
+    "detail": "Pemeriksaan USG menunjukkan embrio tunggal, detak jantung stabil. Berat badan induk bertambah 8 kg sejak inseminasi. Aktivitas normal, nafsu makan baik.",
+    "petugas": "PG002",
+    "waktuRekam": "2025-02-05T10:20:00Z",
+    "hasilAnalisisAI": "Estimasi kelahiran 2025-11-15. AI memprediksi kondisi janin sehat, menilai risiko kelahiran prematur rendah (<5%). Rekomendasi: tingkatkan asupan pakan tinggi energi dan serat sedang untuk mendukung pertumbuhan janin."
+  },
+  {
+    "idMonitoring": "MR004",
+    "idHewanTernak": "HT002",
+    "jenisCatatan": "Birahi",
+    "tanggalPencatatan": "2025-03-02",
+    "detail": "Nafsu makan menurun, ekor sering diangkat, vulva tampak lembab, hewan gelisah, vokalisasi meningkat.",
+    "petugas": "PG003",
+    "waktuRekam": "2025-03-02T07:55:00Z",
+    "hasilAnalisisAI": "Periode birahi terdeteksi normal. AI memperkirakan ovulasi dalam 12–24 jam. Rekomendasi: pengawasan intensif untuk kawin alami atau inseminasi."
+  },
+  {
+    "idMonitoring": "MR005",
+    "idHewanTernak": "HT002",
+    "jenisCatatan": "Kematian",
+    "tanggalPencatatan": "2025-04-01",
+    "detail": "Hewan ditemukan mati mendadak. Dugaan kolik berat, tanda diare sebelumnya. Kondisi kandang diperiksa: pakan tinggi energi, akses air terbatas.",
+    "petugas": "PG004",
+    "waktuRekam": "2025-04-01T06:30:00Z",
+    "hasilAnalisisAI": "Rekomendasi necropsy untuk penyebab pasti. AI menilai risiko kejadian serupa meningkat 18% pada populasi sejenis jika tidak ada perbaikan manajemen pakan dan air."
+  },
+  {
+    "idMonitoring": "MR006",
+    "idHewanTernak": "HT003",
+    "jenisCatatan": "Kawin/Inseminasi",
+    "tanggalPencatatan": "2025-01-25",
+    "detail": "Kawin alami dengan pejantan di kandang B. Perilaku normal, ejakulasi tercatat sesuai prosedur. Induk kooperatif dan kondisi fisik sehat.",
+    "petugas": "PG005",
+    "waktuRekam": "2025-01-25T13:40:00Z",
+    "hasilAnalisisAI": "Siklus reproduksi hewan cenderung subur. AI memperkirakan implantasi embrio berhasil 72%."
+  },
+  {
+    "idMonitoring": "MR007",
+    "idHewanTernak": "HT003",
+    "jenisCatatan": "Kehamilan",
+    "tanggalPencatatan": "2025-02-20",
+    "detail": "Detak jantung embrio terdeteksi, panjang janin normal. Nafsu makan meningkat, berat bertambah 6 kg. Aktivitas harian normal.",
+    "petugas": "PG002",
+    "waktuRekam": "2025-02-20T09:15:00Z",
+    "hasilAnalisisAI": "Estimasi kelahiran 2025-10-18. AI menilai janin dalam posisi optimal dan rendah risiko komplikasi."
+  },
+  {
+    "idMonitoring": "MR008",
+    "idHewanTernak": "HT003",
+    "jenisCatatan": "Kelahiran",
+    "tanggalPencatatan": "2025-10-18",
+    "detail": "Lahir 1 anak jantan, berat 3.5 kg. Induk menyusui aktif, kolostrum cukup, perilaku ibu-normal.",
+    "petugas": "PG001",
+    "waktuRekam": "2025-10-18T04:20:00Z",
+    "hasilAnalisisAI": "Induk siap birahi kembali dalam 45–60 hari. AI memprediksi pertumbuhan anak normal dan menyarankan pakan tambahan untuk induk."
+  },
+  {
+    "idMonitoring": "MR009",
+    "idHewanTernak": "HT004",
+    "jenisCatatan": "Pemisahan Populasi",
+    "tanggalPencatatan": "2025-02-14",
+    "detail": "Dipindahkan ke kandang C karena agresif terhadap hewan lain. Aktivitas dan nafsu makan tetap normal setelah adaptasi.",
+    "petugas": "PG004",
+    "waktuRekam": "2025-02-14T15:00:00Z",
+    "hasilAnalisisAI": "Perubahan kandang menurunkan stres hingga 20%, meningkatkan peluang birahi normal berikutnya. AI merekomendasikan monitoring perilaku 1 minggu setelah pemindahan."
+  },
+  {
+    "idMonitoring": "MR010",
+    "idHewanTernak": "HT004",
+    "jenisCatatan": "Birahi",
+    "tanggalPencatatan": "2025-03-01",
+    "detail": "Tanda birahi ringan: vulva sedikit membengkak, lendir tipis, hewan lebih vokal. Nafsu makan menurun sementara.",
+    "petugas": "PG003",
+    "waktuRekam": "2025-03-01T10:50:00Z",
+    "hasilAnalisisAI": "Rekomendasi kawin dalam 12–24 jam untuk peluang pembuahan optimal. AI memprediksi puncak ovulasi dalam 18 jam."
+  },
+  {
+    "idMonitoring": "MR011",
+    "idHewanTernak": "HT001",
+    "jenisCatatan": "Pemeriksaan Kehamilan Lanjutan",
+    "tanggalPencatatan": "2025-03-12",
+    "detail": "Pemeriksaan lanjutan usia Kehamilan ±60 hari. Denyut jantung janin stabil, plasenta tampak normal, dan ukuran rongga uterus sesuai perkembangan standar. Induk menunjukkan peningkatan nafsu makan dan bertambah 12 kg dibanding awal Kehamilan.",
+    "petugas": "PG002",
+    "waktuRekam": "2025-03-12T09:40:00Z",
+    "hasilAnalisisAI": "Berdasarkan tren berat badan dan stabilitas detak jantung janin, kemungkinan kelahiran sehat sebesar 91%. AI menyarankan peningkatan porsi serat kasar 10–15% mulai minggu ke-10 untuk mendukung perkembangan jerowat. Prediksi kelahiran tetap pada kisaran 2025-11-15 ± 3 hari."
+  },
+  {
+    "idMonitoring": "MR012",
+    "idHewanTernak": "HT008",
+    "jenisCatatan": "Kawin/Inseminasi",
+    "tanggalPencatatan": "2025-03-05",
+    "detail": "Inseminasi buatan dilakukan menggunakan semen pejantan unggulan (kode S-A99), motilitas 82%. Posisi serviks terdeteksi baik dan lendir serviks jernih, menandakan waktu inseminasi tepat. Hewan tenang dan kooperatif saat prosedur.",
+    "petugas": "PG005",
+    "waktuRekam": "2025-03-05T14:15:00Z",
+    "hasilAnalisisAI": "Analisis kondisi mukus serviks dan riwayat siklus birahi HT004 menunjukkan peluang keberhasilan inseminasi mencapai 84%. AI memprediksi waktu penempelan embrio pada dinding uterus terjadi antara 2025-03-10 hingga 2025-03-11. Rekomendasi: minimalisir stres dan hindari perpindahan kandang selama 5 hari ke depan."
+  },
+  {
+    "idMonitoring": "MR013",
+    "idHewanTernak": "HT006",
+    "jenisCatatan": "Birahi",
+    "tanggalPencatatan": "2025-02-28",
+    "detail": "Hewan terlihat sering menaiki sesama betina, frekuensi vokalisasi meningkat, dan vulva tampak lebih lembab. Terdapat lendir bening sepanjang 3–4 cm saat pemeriksaan fisik.",
+    "petugas": "PG001",
+    "waktuRekam": "2025-02-28T07:30:00Z",
+    "hasilAnalisisAI": "Durasi birahi yang terdeteksi sesuai pola normal (18–24 jam). AI memprediksi masa ovulasi mulai 10–14 jam setelah tanda ini muncul. Rekomendasi sistem: jadwalkan kawin/inseminasi antara pukul 18:00–23:00 hari yang sama untuk peluang pembuahan optimal."
+  },
+  {
+    "idMonitoring": "MR014",
+    "idHewanTernak": "HT009",
+    "jenisCatatan": "Kelahiran",
+    "tanggalPencatatan": "2025-04-03",
+    "detail": "Induk melahirkan 2 anak (jantan dan betina). Proses partus berlangsung selama ±45 menit tanpa komplikasi. Bobot lahir masing-masing 2.9 kg dan 2.7 kg. Induk tampak responsif terhadap anaknya dan mulai menyusui dalam 20 menit setelah kelahiran.",
+    "petugas": "PG003",
+    "waktuRekam": "2025-04-03T04:55:00Z",
+    "hasilAnalisisAI": "Berdasarkan data kesehatan induk dan volume kolostrum awal, peluang kedua anak bertahan hingga usia sapih mencapai 95%. Rekomendasi pemberian pakan induk: tinggi energi selama 6 minggu pertama laktasi. Sistem memprediksi siklus birahi kembali terjadi antara 45–65 hari pasca-kelahiran."
+  },
+  {
+    "idMonitoring": "MR015",
+    "idHewanTernak": "HT012",
+    "jenisCatatan": "Kematian",
+    "tanggalPencatatan": "2025-03-16",
+    "detail": "Hewan ditemukan mati pagi hari di kandang D. Terdapat tanda-tanda diare akut sejak 2 hari sebelumnya dan tidak ada respon terhadap pemberian elektrolit. Pemeriksaan cepat menunjukkan dehidrasi parah dan distensi abdomen.",
+    "petugas": "PG004",
+    "waktuRekam": "2025-03-16T06:20:00Z",
+    "hasilAnalisisAI": "AI menyimpulkan kemungkinan besar penyebab kematian adalah enterotoxemia berdasarkan pola progresi gejala dan riwayat pakan tinggi karbohidrat. Sistem menyarankan evaluasi manajemen pakan kandang D serta booster vaksinasi untuk hewan satu populasi. Risiko kejadian serupa pada 14 hari ke depan diprediksi meningkat sebesar 22% jika tidak ada intervensi."
+  },
+  {
+    "idMonitoring": "MR016",
+    "idHewanTernak": "HT005",
+    "jenisCatatan": "Birahi",
+    "tanggalPencatatan": "2025-05-01",
+    "detail": "Hewan jantan menunjukkan gairah kawin, aktif dan nafsu makan normal. Siap untuk kawin alami.",
+    "petugas": "PG006",
+    "waktuRekam": "2025-05-01T08:00:00Z",
+    "hasilAnalisisAI": "AI memprediksi peluang pembuahan optimal jika kawin dalam 24 jam."
+  },
+  {
+    "idMonitoring": "MR017",
+    "idHewanTernak": "HT006",
+    "jenisCatatan": "Perawatan Rutin",
+    "tanggalPencatatan": "2025-05-02",
+    "detail": "Hewan betina diperiksa rutin, vaksinasi dan deworming lengkap. Aktivitas dan nafsu makan normal.",
+    "petugas": "PG006",
+    "waktuRekam": "2025-05-02T09:00:00Z",
+    "hasilAnalisisAI": "Kondisi fisik baik, risiko komplikasi rendah."
+  },
+  {
+    "idMonitoring": "MR018",
+    "idHewanTernak": "HT007",
+    "jenisCatatan": "Kawin/Inseminasi",
+    "tanggalPencatatan": "2025-05-03",
+    "detail": "Inseminasi buatan dilakukan menggunakan semen pejantan unggulan. Hewan kooperatif, lendir serviks normal.",
+    "petugas": "PG007",
+    "waktuRekam": "2025-05-03T10:00:00Z",
+    "hasilAnalisisAI": "AI menandai status hewan sebagai 'Sedang Hamil (Prediksi)'."
+  },
+  {
+    "idMonitoring": "MR019",
+    "idHewanTernak": "HT010",
+    "jenisCatatan": "Birahi",
+    "tanggalPencatatan": "2025-05-04",
+    "detail": "Hewan jantan aktif, nafsu makan normal, menunjukkan tanda birahi. Siap untuk kawin alami.",
+    "petugas": "PG007",
+    "waktuRekam": "2025-05-04T08:30:00Z",
+    "hasilAnalisisAI": "AI memprediksi periode puncak kawin dalam 12–24 jam."
+  },
+  {
+    "idMonitoring": "MR020",
+    "idHewanTernak": "HT013",
+    "jenisCatatan": "Pasca Melahirkan",
+    "tanggalPencatatan": "2025-05-05",
+    "detail": "Induk betina baru melahirkan, menyusui anak dengan baik. Nafsu makan meningkat, aktivitas normal.",
+    "petugas": "PG008",
+    "waktuRekam": "2025-05-05T09:30:00Z",
+    "hasilAnalisisAI": "AI menilai ibu dan anak sehat, prediksi birahi kembali ±45 hari pasca kelahiran."
+  },
+  {
+    "idMonitoring": "MR021",
+    "idHewanTernak": "HT014",
+    "jenisCatatan": "Kawin/Inseminasi",
+    "tanggalPencatatan": "2025-05-06",
+    "detail": "Inseminasi buatan berhasil, induk kooperatif. Lendir serviks normal, posisi uterus optimal.",
+    "petugas": "PG008",
+    "waktuRekam": "2025-05-06T07:50:00Z",
+    "hasilAnalisisAI": "AI menandai status hewan sebagai 'Sedang Hamil (Prediksi)'."
+  },
+  {
+    "idMonitoring": "MR022",
+    "idHewanTernak": "HT015",
+    "jenisCatatan": "Perawatan Rutin",
+    "tanggalPencatatan": "2025-05-07",
+    "detail": "Hewan betina diperiksa rutin, vaksinasi dan deworming lengkap. Aktivitas normal, nafsu makan baik.",
+    "petugas": "PG009",
+    "waktuRekam": "2025-05-07T08:10:00Z",
+    "hasilAnalisisAI": "AI menilai kondisi optimal, risiko penyakit rendah."
+  },
+  {
+    "idMonitoring": "MR023",
+    "idHewanTernak": "HT011",
+    "jenisCatatan": "Perawatan Rutin",
+    "tanggalPencatatan": "2025-05-02",
+    "detail": "Hewan jantan diperiksa rutin, vaksinasi dan deworming lengkap. Aktivitas dan nafsu makan normal.",
+    "petugas": "PG006",
+    "waktuRekam": "2025-05-02T09:00:00Z",
+    "hasilAnalisisAI": "Kondisi fisik baik, risiko komplikasi rendah."
+  }
+]

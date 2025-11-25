@@ -2,7 +2,7 @@ import ResendActivationForm from "../molecules/ResendActivationForm";
 import LoginTemplate from "../templates/LoginTemplate";
 import AuthShell from "../shell/AuthShell";
 
-const SignUpPage = () => {
+const ResendActivationPage = () => {
     return (
         <AuthShell>
             <LoginTemplate>
@@ -12,4 +12,4 @@ const SignUpPage = () => {
     )
 }
 
-export default SignUpPage;
+export default ResendActivationPage;

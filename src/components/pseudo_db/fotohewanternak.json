@@ -1,0 +1,20 @@
+[
+  { "idFotoHewanTernak": "FHT001", "idHewanTernak": "HT001", "fotoUrl": "/assets/img/hewanternak/sapi_bali_1.jpg", "thumbnail": true },
+  { "idFotoHewanTernak": "FHT002", "idHewanTernak": "HT002", "fotoUrl": "/assets/img/hewanternak/sapi_limousin_1.jpg", "thumbnail": true },
+  { "idFotoHewanTernak": "FHT003", "idHewanTernak": "HT003", "fotoUrl": "/assets/img/hewanternak/kambing_etawa_1.jpg", "thumbnail": true },
+  { "idFotoHewanTernak": "FHT004", "idHewanTernak": "HT004", "fotoUrl": "/assets/img/hewanternak/kambing_etawa_2.jpg", "thumbnail": true },
+  { "idFotoHewanTernak": "FHT005", "idHewanTernak": "HT005", "fotoUrl": "/assets/img/hewanternak/domba_garut_1.jpg", "thumbnail": true },
+  { "idFotoHewanTernak": "FHT006", "idHewanTernak": "HT006", "fotoUrl": "/assets/img/hewanternak/sapi_bali_2.jpg", "thumbnail": false },
+  { "idFotoHewanTernak": "FHT007", "idHewanTernak": "HT007", "fotoUrl": "/assets/img/hewanternak/kambing_boer_1.jpg", "thumbnail": true },
+  { "idFotoHewanTernak": "FHT008", "idHewanTernak": "HT008", "fotoUrl": "/assets/img/hewanternak/domba_garut_2.jpg", "thumbnail": false },
+  { "idFotoHewanTernak": "FHT009", "idHewanTernak": "HT009", "fotoUrl": "/assets/img/hewanternak/sapi_limousin_2.jpg", "thumbnail": false },
+  { "idFotoHewanTernak": "FHT010", "idHewanTernak": "HT010", "fotoUrl": "/assets/img/hewanternak/kambing_etawa_3.jpg", "thumbnail": true },
+  { "idFotoHewanTernak": "FHT011", "idHewanTernak": "HT011", "fotoUrl": "/assets/img/hewanternak/sapi_bali_3.jpg", "thumbnail": true },
+  { "idFotoHewanTernak": "FHT012", "idHewanTernak": "HT012", "fotoUrl": "/assets/img/hewanternak/kambing_boer_3.jpg", "thumbnail": true },
+  { "idFotoHewanTernak": "FHT013", "idHewanTernak": "HT013", "fotoUrl": "/assets/img/hewanternak/domba_garut_3.jpg", "thumbnail": true },
+  { "idFotoHewanTernak": "FHT014", "idHewanTernak": "HT014", "fotoUrl": "/assets/img/hewanternak/sapi_limousin_3.jpg", "thumbnail": true },
+  { "idFotoHewanTernak": "FHT015", "idHewanTernak": "HT015", "fotoUrl": "/assets/img/hewanternak/kambing_etawa_4.jpg", "thumbnail": true },
+  { "idFotoHewanTernak": "FHT016", "idHewanTernak": "HT001", "fotoUrl": "/assets/img/hewanternak/sapi_bali_4.jpg", "thumbnail": false },
+  { "idFotoHewanTernak": "FHT017", "idHewanTernak": "HT005", "fotoUrl": "/assets/img/hewanternak/domba_garut_4.jpg", "thumbnail": false },
+  { "idFotoHewanTernak": "FHT018", "idHewanTernak": "HT009", "fotoUrl": "/assets/img/hewanternak/sapi_limousin_4.jpg", "thumbnail": false }
+]

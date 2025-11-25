@@ -1,107 +1,142 @@
 import Button from "../atoms/Button";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { useNavigate } from "react-router-dom";
-import { LoginOutlined } from "@ant-design/icons";
-import { CompassOutlined, BarChartOutlined, ShoppingOutlined } from '@ant-design/icons';
-import FeatureCard from "../atoms/FeatureCard";
-import Slider from "react-slick";
-import { MdLocalShipping } from 'react-icons/md';
+import { GrCatalog } from "react-icons/gr";
+import { RiCustomerService2Line } from "react-icons/ri";
+import { useState } from "react";
+import useIsMobile from "../hooks/UseIsMobile";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import useScreenSize from '../hooks/UseScreenSize';
 
 type LandingProps = {
-    layoutMessage: string;
-    layoutTitle: string;
-}
+  layoutMessage: string;
+  layoutTitle: string;
+  layoutSubtitle: string;
+};
+
+const sampleImages = [
+  { 
+    src: "/assets/img/farm-gallery1.jpg", 
+    title: "Kandang Kambing", 
+    desc: "Area kandang kambing yang tertata rapi dengan ventilasi alami untuk menjaga kesehatan ternak." 
+  },
+  { 
+    src: "/assets/img/farm-gallery2.jpg", 
+    title: "Kandang Sapi Jantan", 
+    desc: "Sapi jantan di area perawatan dengan pengawasan langsung dari peternak Alkafi Farm." 
+  },
+  { 
+    src: "/assets/img/farm-gallery3.jpg", 
+    title: "Penimbangan Ternak", 
+    desc: "Proses penimbangan ternak untuk memantau pertumbuhan dan kesehatan hewan." 
+  },
+  { 
+    src: "/assets/img/farm-gallery4.jpg", 
+    title: "Kandang Domba", 
+    desc: "Area kandang domba dengan sistem pemeliharaan yang bersih dan nyaman." 
+  },
+  { 
+    src: "/assets/img/farm-gallery5.jpg", 
+    title: "Proses Fattening", 
+    desc: "Sapi menjalani proses penggemukan dengan pakan berkualitas di kandang utama." 
+  },
+];
+
 
 const LandingLayouts = (props: LandingProps) => {
-    const navigate = useNavigate();
-    const { layoutTitle, layoutMessage } = props;
+  const navigate = useNavigate();
+  const isMobile = useIsMobile();
+  const { layoutTitle, layoutSubtitle,  layoutMessage } = props;
+  const [activeIndex, setActiveIndex] = useState(0);
+  const width = useScreenSize();
+  const width1350 = width <= 1350 && width > 1200;
+  const width1200 = width <= 1200;
+  const centeredSlides = width <= 1024; 
 
-    const features = [
-        {
-            icon: <CompassOutlined style={{ fontSize: '48pt', marginTop: '10px', color: '#008080' }} />,
-            title: 'Cari Bank Sampah',
-            description: 'Temukan bank sampah terdekat dari lokasi Anda saat ini',
-        },
-        {
-            icon: <MdLocalShipping style={{ fontSize: '48pt', marginTop: '10px', color: '#008080' }} />,
-            title: 'Pick Up',
-            description: 'Setorkan sampah Anda melalui bank sampah keliling tanpa perlu ke lokasi',
-        },
-        {
-            icon: <ShoppingOutlined style={{ fontSize: '48pt', marginTop: '10px', color: '#008080' }} />,
-            title: 'Marketplace',
-            description: 'Temukan produk-produk terbaik hasil daur ulang dari berbagai penjual',
-        },
-        {
-            icon: <BarChartOutlined style={{ fontSize: '48pt', marginTop: '10px', color: '#008080' }} />,
-            title: 'Insight',
-            description: 'Dapatkan analisis performa dan laporan transaksi Anda di WasteTrack',
-        },
-    ];
+  return (
+    <div className="min-h-screen-default mt-16 w-full py-10 flex flex-col lg:flex-row relative bg-cover bg-center">
+      {/* Overlay hitam transparan */}
+      <div className="absolute inset-0 bg-black/10 z-0"></div>
 
-    const sliderSettings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: true,
-        centerMode: true,
-        centerPadding: "0px",
-        slidesToShow: 3,
-        swipeToSlide: true,
-        slidesToScroll: 1,
-        responsive: [
-            {
-              breakpoint: 1050,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: true
-              }
-            },
-            {
-              breakpoint: 750,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                initialSlide: 2
-              }
-            }
-          ]
-    };
+      {/* Konten Kiri */}
+      <div className="flex items-center justify-center w-full lg:w-1/2 px-6 sm:px-12 lg:px-16 z-10 order-1 lg:order-none">
+        <div className="max-w-lg text-center lg:text-left">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-spring text-farmgrassgreen leading-tight drop-shadow-lg font-light">
+            {layoutTitle}
+          </h1>
+          <h2 className="mt-1 text-xl sm:text-xl lg:text-xl font-spring text-farmgreen drop-shadow-md font-extralight">
+            {layoutSubtitle}
+          </h2>
+          <p className="mt-4 text-md sm:text-md text-rajutGray text-justify lg:text-justify drop-shadow-md">
+            {layoutMessage}
+          </p>
 
-    return (
-        <div className="pt-40 pb-10 flex flex-col justify-between items-center min-h-screen px-4">
-            <div className="w-full px-10">
-                <center>
-                    <h1 className="text-4xl font-bold text-white">
-                        {layoutTitle} Waste<span className="text-amber-400">Track</span>
-                    </h1>
-                    <h3 className="mt-2 text-2xl text-white">{layoutMessage}</h3>
-                    <Button
-                        message=""
-                        onClick={() => navigate("/login")}
-                        variant="hover:bg-lime-300 hover:text-lime-950 bg-transparent mt-8 border-solid border-2 border-lime-400 text-white sm:h-[35px] h-[35px]">
-                        <LoginOutlined /> &nbsp;Login
-                    </Button>
-                </center>
-                <div className="mt-20 custom-slider-container">
-                    <Slider {...sliderSettings}>
-                        {features.map((feature, index) => (
-                            <div key={index} className="custom-slide justify-items-center">
-                                <FeatureCard
-                                    icon={feature.icon}
-                                    title={feature.title}
-                                    description={feature.description}
-                                />
-                            </div>
-                        ))}
-                    </Slider>
-                </div>
-            </div>
+          {/* Tombol */}
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+           <Button
+                message=""
+                onClick={() => navigate("/Katalog")}
+                variant="flex items-center justify-center gap-2 min-h-10 bg-farmgrassgreen hover:bg-farmgreen text-white px-6 rounded-full font-poppins"
+                >
+                <GrCatalog className="text-lg" />
+                <span>Lihat Katalog</span>
+            </Button>
+
+            <Button
+              message=""
+              onClick={() => navigate("/Contact")}
+              variant="flex items-center justify-center gap-2 min-h-10 bg-transparent border-[0.22em] border-farmgrassgreen text-farmgrassgreen hover:bg-farmgreen hover:text-white px-6 rounded-full font-poppins"
+            >
+              <RiCustomerService2Line className="text-lg" />
+              Hubungi Kami
+            </Button>
+          </div>
         </div>
-    );
-}
+      </div>
+
+      {/* Konten Kanan: Gambar */}
+      <div className={`w-full lg:w-1/2 flex items-center justify-center px-4 my-8 lg:mt-0 `}>
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween={12} 
+          slidesPerView={isMobile ? 1 : width1350 ? 2 : width1200 ? 1.6 : 2.6}
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 1800 }}
+          className={`${
+            isMobile ? 'w-[90vw]' : 'w-[85%]'
+          } max-w-5xl`} // perlebar container Swiper-nya
+          centeredSlides={centeredSlides}
+          loop
+          onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+        >
+          {sampleImages.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div
+                className={`relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 ease-in-out
+                ${index === activeIndex ? 'scale-110 z-20 mr-[12px]' : 'scale-95 opacity-90'}
+              `}
+                style={{ transformOrigin: 'bottom center' }}
+              >
+                <img
+                  src={item.src}
+                  alt={item.title}
+                  className="w-full h-[22rem] md:h-[26rem] object-cover" // perbesar tinggi gambar
+                />
+                <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent text-white p-5">
+                  <h3 className="text-xl font-semibold">{item.title}</h3>
+                  <p className="text-sm opacity-80 line-clamp-2">{item.desc}</p>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+      </div>
+    </div>
+  );
+};
 
 export default LandingLayouts;

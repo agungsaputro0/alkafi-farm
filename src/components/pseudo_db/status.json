@@ -1,0 +1,50 @@
+[
+    {
+      "idStatus": "ST001",
+      "namaStatus": "Aktif",
+      "kategori": "Umum",
+      "deskripsi": "Hewan sedang aktif dalam peternakan dan dipantau secara rutin."
+    },
+    {
+      "idStatus": "ST002",
+      "namaStatus": "Terjual",
+      "kategori": "Umum",
+      "deskripsi": "Hewan sudah dijual dan tidak lagi berada di peternakan."
+    },
+    {
+      "idStatus": "ST003",
+      "namaStatus": "Mati",
+      "kategori": "Umum",
+      "deskripsi": "Hewan dinyatakan mati karena sakit, usia, atau sebab lain."
+    },
+    {
+      "idStatus": "ST004",
+      "namaStatus": "Sakit",
+      "kategori": "Kesehatan",
+      "deskripsi": "Hewan sedang sakit dan memerlukan penanganan medis."
+    },
+    {
+      "idStatus": "ST005",
+      "namaStatus": "Karantina",
+      "kategori": "Kesehatan",
+      "deskripsi": "Hewan dalam masa observasi atau baru masuk ke peternakan."
+    },
+    {
+      "idStatus": "ST006",
+      "namaStatus": "Bunting",
+      "kategori": "Reproduksi",
+      "deskripsi": "Hewan betina sedang dalam masa kehamilan."
+    },
+    {
+      "idStatus": "ST007",
+      "namaStatus": "Menyusui",
+      "kategori": "Reproduksi",
+      "deskripsi": "Hewan betina sedang menyusui anaknya."
+    },
+    {
+      "idStatus": "ST008",
+      "namaStatus": "Siap Kawin",
+      "kategori": "Reproduksi",
+      "deskripsi": "Hewan sudah mencapai usia reproduksi dan siap dikawinkan."
+    }
+  ]

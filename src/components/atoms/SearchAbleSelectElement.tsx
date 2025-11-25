@@ -1,22 +1,27 @@
 import { forwardRef, useState } from "react";
 import Label from "./Label";
 import Select from "react-select";
+import { Tooltip } from "antd";
 
 interface SelectElementProps {
   inputClass?: string;
   id?: string;
+  placeholder: string;
   forwhat: string;
   labelMessage: string;
   options: { value: string; label: string }[];
   onChange: (selectedOption: any) => void; // Handler function for onChange
-  onSearch: (searchTerm: string) => void; // Handler function for onSearch
+  onSearch?: (searchTerm: string) => void; // 👈
   value?: string;
   name?: string; // Optional, as needed
+  tooltipText?: string; // ✅ tambahkan ini
+  isReady?: boolean;
 }
 
 const SearchableSelect = forwardRef<HTMLDivElement, SelectElementProps>(
-  ({ inputClass, forwhat, labelMessage, options, onChange, onSearch, value, name }, ref) => {
+  ({ inputClass, placeholder, forwhat, labelMessage, options, onChange, onSearch, value, name, tooltipText, isReady }, ref) => {
     const [searchTimer, setSearchTimer] = useState<NodeJS.Timeout | null>(null);
+    const [isFocused, setIsFocused] = useState(false);
 
     const handleSearchChange = (newSearchTerm: string) => {
       if (searchTimer) {
@@ -25,24 +30,30 @@ const SearchableSelect = forwardRef<HTMLDivElement, SelectElementProps>(
 
       // Set a new timeout to call the onSearch function after a delay
       const timer = setTimeout(() => {
-        onSearch(newSearchTerm); // Call the onSearch function after the delay
-      }, 500); // 500ms delay (can be adjusted)
+        onSearch?.(newSearchTerm); // ✅ optional chaining, hanya dipanggil kalau ada
+      }, 500);
 
       setSearchTimer(timer); // Store the timer to clear it later
     };
-
+    
     return (
       <div className={inputClass}>
         <Label className="text-gray-800 font-semibold" forwhat={forwhat} labelMessage={labelMessage} />
         <div ref={ref}>
+          <Tooltip
+                      title={isReady ? tooltipText : tooltipText}
+                      visible={isFocused && !!tooltipText && options.length <= 1}
+                      placement="topLeft"
+                    >
+          <div onFocus={() => setIsFocused(true)} onBlur={() => setIsFocused(false)}>
           <Select
             id={name}
             name={name}
-            className="text-sm border-b-2 border-gray-500 w-full py-2 px-2 text-gray-800 placeholder:opacity-90 bg-transparent focus:border-gray-800 border-gray-300"
+            className="text-sm border-b-2 border-gray-500 w-full pt-2 pb-[9px] px-2 text-gray-800 placeholder:opacity-90 bg-transparent focus:border-gray-800 border-gray-300"
             options={options}
             onChange={onChange}
             onInputChange={handleSearchChange} // Handle search change with delay
-            placeholder="Select Option"
+            placeholder={placeholder}
             isSearchable
             value={options.find((option) => option.value === value)}
             styles={{
@@ -86,6 +97,8 @@ const SearchableSelect = forwardRef<HTMLDivElement, SelectElementProps>(
               }),
             }}
           />
+          </div>
+          </Tooltip>
         </div>
       </div>
     );

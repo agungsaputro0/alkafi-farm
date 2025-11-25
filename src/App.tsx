@@ -1,18 +1,51 @@
 import { lazy, Suspense } from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import LoadingSpinner from './components/atoms/LoadingSpinner';
-import ProtectedRoute from './components/hooks/ProtectedRoute';
+import StakeholderRoute from './components/hooks/StakeholderRoute';
 import RedirectIfLoggedIn from './components/hooks/RedirectIfLoggedIn';
+
 
 const Welcome = lazy(() => import('./components/pages/Welcome'));
 const LoginPage = lazy(() => import('./components/pages/Login'));
 const Home = lazy(() => import('./components/pages/Home'));
+const AboutUs = lazy(() => import('./components/pages/AboutUs'));
 const Profil = lazy(() => import('./components/pages/Profil'));
 const SignUpPage = lazy(() => import('./components/pages/SignUp'));
 const ResendActivationPage = lazy(() => import('./components/pages/ResendActivation'));
+const ForgotPasswordPage = lazy(() => import('./components/pages/ForgotPassword'));
+const ChangePasswordPage = lazy(() => import('./components/pages/ChangePassword'));
+const RepositoryHewanTernak = lazy(() => import('./components/pages/HewanTernak/RepositoryHewanTernak'));
+const TambahHewanTernak = lazy(() => import('./components/pages/HewanTernak/TambahHewan'));
+const GudangObatdanSuplemen = lazy(() => import('./components/pages/GudangObatdanSuplemen/GudangObatdanSuplemenLanding'));
+const TambahObatdanSuplemen = lazy(() => import('./components/pages/GudangObatdanSuplemen/TambahObatdanSuplemenForm'));
+const GudangPakan = lazy(() => import('./components/pages/GudangPakan/GudangPakanLanding'));
+const TambahPerolehanPakan = lazy(() => import('./components/pages/GudangPakan/TambahPerolehanPakanForm'));
+const RiwayatPenimbangan = lazy(() => import('./components/pages/RiwayatPenimbangan/RiwayatPenimbanganLanding'));
+const KesehatanHewan = lazy(() => import('./components/pages/KesehatanHewan/KesehatanHewanLanding'));
+const RiwayatKesehatanHewan = lazy(() => import('./components/pages/KesehatanHewan/RiwayatKesehatanHewanLanding'));
+const TambahRiwayatKesehatanHewan = lazy(() => import('./components/pages/KesehatanHewan/TambahRiwayatKesehatanForm'));
+const MonitoringSiklusHewan = lazy(() => import('./components/pages/MonitoringSiklus/MonitoringSiklusHewan'));
+const DetailMonitoringSiklus = lazy(() => import('./components/pages/MonitoringSiklus/DetailMonitoringSiklusHewanTernak'));
+const TambahRiwayatSiklus = lazy(() => import('./components/pages/MonitoringSiklus/TambahRiwayatSiklusHewanTernak'));
+
+
 const Users = lazy(() => import('./components/pages/Users'));
 const AddUser = lazy(() => import('./components/pages/AddUser'));
 const UpdateUser = lazy(() => import('./components/pages/UpdateUser'));
+const ActivateUser = lazy(() => import('./components/pages/ActivateUser'));
+const Portal = lazy(() => import('./components/pages/Portal'));
+const ApbnPendapatan = lazy(() => import('./components/pages/ApbnPendapatanPage'));
+const ApbnPengeluaran = lazy(() => import('./components/pages/ApbnPengeluaranPage'));
+const ApbdPendapatan = lazy(() => import('./components/pages/ApbdPendapatanPage'));
+const ApbdPengeluaran = lazy(() => import('./components/pages/ApbdPengeluaranPage'));
+const ApbdPembiayaan = lazy(() => import('./components/pages/ApbdPembiayaanPage'));
+const Pdrb = lazy(() => import('./components/pages/EkonomiRegionalPdrbPage'));
+const Inflasi = lazy(() => import('./components/pages/EkonomiRegionalInflasiPage'));
+const Tpt = lazy(() => import('./components/pages/EkonomiRegionalTptPage'));
+const Ntp = lazy(() => import('./components/pages/EkonomiRegionalNtpPage'));
 
 const App = () => {
   return (
@@ -20,15 +53,47 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Navigate to="/Welcome" />} />
         <Route path="/Welcome" element={<RedirectIfLoggedIn><Welcome /></RedirectIfLoggedIn>} />
+        <Route path="/AboutUs" element={<RedirectIfLoggedIn><AboutUs /></RedirectIfLoggedIn>} />
         <Route path="/Login" element={<RedirectIfLoggedIn><LoginPage /></RedirectIfLoggedIn>} />
         <Route path="/SignUp" element={<RedirectIfLoggedIn><SignUpPage /></RedirectIfLoggedIn>} />
         <Route path="/ResendAktivasi" element={<RedirectIfLoggedIn><ResendActivationPage /></RedirectIfLoggedIn>} />
-        <Route path="/Home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
-        <Route path="/Profil" element={<ProtectedRoute><Profil /></ProtectedRoute>} />
-        <Route path="/Users" element={<ProtectedRoute><Users /></ProtectedRoute>} />
-        <Route path="/TambahUser" element={<ProtectedRoute><AddUser /></ProtectedRoute>} />
-        <Route path="/UpdateUser/:tipe/:uid" element={<ProtectedRoute><UpdateUser /></ProtectedRoute>} />
+        <Route path="/ForgotPassword" element={<RedirectIfLoggedIn><ForgotPasswordPage /></RedirectIfLoggedIn>} />
+        <Route path="/ChangePassword" element={<RedirectIfLoggedIn><ChangePasswordPage /></RedirectIfLoggedIn>} />
+        <Route path="/Home" element={<StakeholderRoute><Home /></StakeholderRoute>} />
+        <Route path="/Profil" element={<StakeholderRoute><Profil /></StakeholderRoute>} />
+        <Route path="/Users" element={<StakeholderRoute><Users /></StakeholderRoute>} />
+        <Route path="/ternak/repository" element={<StakeholderRoute><RepositoryHewanTernak /></StakeholderRoute>} />
+        <Route path="/ternak/tambahHewan" element={<StakeholderRoute><TambahHewanTernak /></StakeholderRoute>} />
+        <Route path="/ternak/penimbangan" element={<StakeholderRoute><RiwayatPenimbangan /></StakeholderRoute>} />
+        <Route path="/ternak/kesehatan" element={<StakeholderRoute><KesehatanHewan /></StakeholderRoute>} />
+        <Route path="/ternak/kesehatan" element={<StakeholderRoute><KesehatanHewan /></StakeholderRoute>} />
+        <Route path="/ternak/kesehatan/:neckTag" element={<StakeholderRoute><RiwayatKesehatanHewan /></StakeholderRoute>} />
+        <Route path="/ternak/kesehatan/tambahriwayatkesehatan/:neckTag" element={<StakeholderRoute><TambahRiwayatKesehatanHewan /></StakeholderRoute>} />
+        <Route path="/ternak/monitoring" element={<StakeholderRoute><MonitoringSiklusHewan /></StakeholderRoute>} />
+        <Route path="/ternak/monitoring/:neckTag" element={<StakeholderRoute><DetailMonitoringSiklus /></StakeholderRoute>} />
+        <Route path="/ternak/monitoring/tambahriwayatsiklus/:neckTag" element={<StakeholderRoute><TambahRiwayatSiklus /></StakeholderRoute>} />
+        <Route path="/GudangObat" element={<StakeholderRoute><GudangObatdanSuplemen /></StakeholderRoute>} />
+        <Route path="/GudangObat/tambahDataObatdanSuplemen" element={<StakeholderRoute><TambahObatdanSuplemen /></StakeholderRoute>} />
+        <Route path="/StokPakan" element={<StakeholderRoute><GudangPakan /></StakeholderRoute>} />
+        <Route path="/StokPakan/tambahPerolehanPakan" element={<StakeholderRoute><TambahPerolehanPakan /></StakeholderRoute>} />
+
+        <Route path="/TambahUser" element={<StakeholderRoute><AddUser /></StakeholderRoute>} />
+        <Route path="/UpdateUser/:tipe/:uid" element={<StakeholderRoute><UpdateUser /></StakeholderRoute>} />
+        <Route path="/AktivasiAkun/:uid" element={<RedirectIfLoggedIn><ActivateUser /></RedirectIfLoggedIn>} />
+        <Route path="/Portal" element={<StakeholderRoute><Portal /></StakeholderRoute>} />
+        <Route path="/APBN/Pendapatan" element={<StakeholderRoute><ApbnPendapatan /></StakeholderRoute>} />
+        <Route path="/APBN/Pengeluaran" element={<StakeholderRoute><ApbnPengeluaran /></StakeholderRoute>} />
+        <Route path="/APBD/Pendapatan" element={<StakeholderRoute><ApbdPendapatan /></StakeholderRoute>} />
+        <Route path="/APBD/Pengeluaran" element={<StakeholderRoute><ApbdPengeluaran /></StakeholderRoute>} />
+        <Route path="/APBD/Pembiayaan" element={<StakeholderRoute><ApbdPembiayaan /></StakeholderRoute>} />
+        <Route path="/Ekonomi/Pdrb" element={<StakeholderRoute><Pdrb /></StakeholderRoute>} />
+        <Route path="/Ekonomi/Inflasi" element={<StakeholderRoute><Inflasi /></StakeholderRoute>} />
+        <Route path="/Ekonomi/Tpt" element={<StakeholderRoute><Tpt /></StakeholderRoute>} />
+        <Route path="/Ekonomi/Ntp" element={<StakeholderRoute><Ntp /></StakeholderRoute>} />
       </Routes>
+
+      {/* Tambahkan container di sini */}
+      <ToastContainer position="top-right" autoClose={3000} theme="light" />
     </Suspense>
   );
 };

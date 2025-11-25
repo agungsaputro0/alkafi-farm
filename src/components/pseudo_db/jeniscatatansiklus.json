@@ -1,0 +1,38 @@
+[
+  {
+    "namaSiklus": "Birahi",
+    "warna": "#F87171"
+  },
+  {
+    "namaSiklus": "Kawin/Inseminasi",
+    "warna": "#60A5FA"
+  },
+  {
+    "namaSiklus": "Kehamilan",
+    "warna": "#34D399"
+  },
+  {
+    "namaSiklus": "Kelahiran",
+    "warna": "#FBBF24"
+  },
+  {
+    "namaSiklus": "Pemisahan Populasi",
+    "warna": "#A78BFA"
+  },
+  {
+    "namaSiklus": "Kematian",
+    "warna": "#9CA3AF"
+  },
+  {
+    "namaSiklus": "Pemeriksaan Kehamilan Lanjutan",
+    "warna": "#F472B6"
+  },
+  {
+    "namaSiklus": "Perawatan Rutin",
+    "warna": "#3B82F6"
+  },
+  {
+    "namaSiklus": "Pasca Melahirkan",
+    "warna": "#FCD34D"
+  }
+]
