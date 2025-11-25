@@ -84,15 +84,7 @@ const ProfilForm: FC = () => {
               />
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <InputElement
-                inputClass="mb-6"
-                forwhat="email"
-                labelMessage="Email"
-                typeInput="email"
-                inputName="email"
-                inputPlaceholder="example@example.com"
-                defaultValue={dataUser?.email || ""}
-              />
+              
               <InputElement
                 inputClass="mb-6"
                 forwhat="password"

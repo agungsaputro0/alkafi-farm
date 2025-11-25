@@ -1,17 +1,17 @@
-import { useEffect, useState } from 'react';
-import { LoadingOutlined } from '@ant-design/icons';
-import { useAuth } from '../hooks/AuthContext';
-import { useNavigate } from 'react-router-dom';
+// import { useEffect, useState } from 'react';
+// import { LoadingOutlined } from '@ant-design/icons';
+// import { useAuth } from '../hooks/AuthContext';
+// import { useNavigate } from 'react-router-dom';
 
 const Template = () => {
-  const { userAuth } = useAuth();
-  const navigate = useNavigate();
+  // const { userAuth } = useAuth();
+  // const navigate = useNavigate();
 
-  const handleSeeXXX = (uid: string) => {
-    navigate(`/XXX/${uid}`);
-  };
+  // const handleSeeXXX = (uid: string) => {
+  //   navigate(`/XXX/${uid}`);
+  // };
 
-  const loadingIndicator = <LoadingOutlined style={{ fontSize: 24, color: 'white' }} spin />;
+  // const loadingIndicator = <LoadingOutlined style={{ fontSize: 24, color: 'white' }} spin />;
 
   return (
     <section>

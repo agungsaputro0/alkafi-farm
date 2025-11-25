@@ -13,8 +13,8 @@ import { handleUpdateUser } from "../hooks/HandleUser";
 
 const UpdateUserForm: FC = () => {
     const [role, setRole] = useState<string>("");
-    const [tipeDebitur, setTipeDebitur] = useState<string>('Perusahaan');
-    const [crashProgram, setCrashProgram] = useState<string>('Tidak');
+    const [tipeDebitur, _setTipeDebitur] = useState<string>('Perusahaan');
+    const [crashProgram, _setCrashProgram] = useState<string>('Tidak');
     const [tipeAkun, setTipeAkun] = useState<string>("");
     const [selectedEsl4, setSelectedEsl4] = useState<string>('');
     const [statusAktivasi, setStatusAktivasi] = useState<boolean>(false);
