@@ -20,7 +20,7 @@ const DashboardPanels: React.FC<DashboardPanelsProps> = ({ className = "" }) => 
 
         {/* Panel 1: Total Ternak */}
         <div className="flex items-center p-4 rounded-2xl shadow-md transition self-stretch border border-gray-200
-                      text-farmBrown hover:shadow-xl hover:bg-farmbrown/40">
+                      text-farmBrown hover:shadow-xl hover:bg-greenlogo/40">
           <div className="text-4xl mr-4 text-farmOrange">
             <GiCow />
           </div>
@@ -33,7 +33,7 @@ const DashboardPanels: React.FC<DashboardPanelsProps> = ({ className = "" }) => 
 
         {/* Panel 2: Stok Pakan Tersedia */}
         <div className="flex items-center p-4 rounded-2xl  shadow-md transition self-stretch border border-gray-200
-                      text-farmBrown hover:shadow-xl hover:bg-farmbrown/40">
+                      text-farmBrown hover:shadow-xl hover:bg-greenlogo/40">
           <div className="text-4xl mr-4 text-farmgreen">
             <FaLeaf />
           </div>
@@ -46,7 +46,7 @@ const DashboardPanels: React.FC<DashboardPanelsProps> = ({ className = "" }) => 
 
         {/* Panel 3: Kegiatan Harian Selesai */}
         <div className="flex items-center p-4 rounded-2xl shadow-md transition self-stretch border border-gray-200
-                      text-farmBrown hover:shadow-xl hover:bg-farmbrown/40">
+                      text-farmBrown hover:shadow-xl hover:bg-greenlogo/40">
           <div className="text-4xl mr-4 text-farmLiteGold">
             <FaClipboardCheck />
           </div>
@@ -59,7 +59,7 @@ const DashboardPanels: React.FC<DashboardPanelsProps> = ({ className = "" }) => 
 
         {/* Panel 4: Catatan Kesehatan */}
         <div className="flex items-center p-4 rounded-2xl shadow-md transition self-stretch border border-gray-200
-                      text-farmBrown hover:shadow-xl hover:bg-farmbrown/40">
+                      text-farmBrown hover:shadow-xl hover:bg-greenlogo/40">
           <div className="text-4xl mr-4 text-red-600">
             <FaNotesMedical />
           </div>
@@ -72,7 +72,7 @@ const DashboardPanels: React.FC<DashboardPanelsProps> = ({ className = "" }) => 
 
         {/* Panel 5: Aktivitas Reproduksi */}
         <div className="flex items-center p-4 rounded-2xl shadow-md transition self-stretc border border-gray-200
-                      text-farmBrown hover:shadow-xl hover:bg-farmbrown/40">
+                      text-farmBrown hover:shadow-xl hover:bg-greenlogo/40">
           <div className="text-4xl mr-4 text-farmgreen">
             <PiMonitorDuotone />
           </div>
@@ -85,7 +85,7 @@ const DashboardPanels: React.FC<DashboardPanelsProps> = ({ className = "" }) => 
 
         {/* Panel 6: Penjualan Bulan Ini */}
         <div className="flex items-center p-4 rounded-2xl shadow-md transition self-stretch border border-gray-200
-                      text-farmBrown hover:shadow-xl hover:bg-farmbrown/40">
+                      text-farmBrown hover:shadow-xl hover:bg-greenlogo/40">
           <div className="text-4xl mr-4 text-kemenkeuyellow">
             <FaMoneyBillWave />
           </div>

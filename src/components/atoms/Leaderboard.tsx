@@ -57,7 +57,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({ className = "" }) => {
           return (
             <li
               key={tx.customer}
-              className={`flex items-center justify-between p-3 rounded-lg shadow-sm ${bgHighlight} hover:bg-farmbrown/70 transition`}
+              className={`flex items-center justify-between p-3 rounded-lg shadow-sm ${bgHighlight} hover:bg-greenlogo/70 transition`}
             >
               {/* Kiri: icon + customer */}
               <div className="flex items-center space-x-3">
