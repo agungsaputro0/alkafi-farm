@@ -28,7 +28,7 @@ const Navbar = () => {
       as="nav"
       className={`fixed w-full py-1 z-50 transition duration-500 ${
         isScrolled
-          ? 'backdrop-blur-xl bg-footeruplist/30 border-b border-white/20 shadow-md'
+          ? 'backdrop-blur-xl bg-kemenkeuyellow/60 border-b border-white/20 shadow-md'
           : 'backdrop-blur-lg bg-footeruplist/20'
       }`}
     >
