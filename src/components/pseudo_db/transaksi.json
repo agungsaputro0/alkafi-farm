@@ -1,0 +1,112 @@
+[
+  {
+    "idTransaksi": "TR25112025001",
+    "namaPembeli": "Andi Saputra",
+    "nomorHandphone": "081234567890",
+    "alamatPembeli": "Jl. Melati No.12, Semarang",
+    "kanalTransaksi": "whatsapp",
+    "metodePembayaran": "transfer",
+    "tanggalTransaksi": "2025-11-25",
+    "biayaKirim": 15000,
+    "status": "selesai"
+  },
+  {
+    "idTransaksi": "TR26112025002",
+    "namaPembeli": "Siti Rahma",
+    "nomorHandphone": "081298765432",
+    "alamatPembeli": "Jl. Mawar No.45, Solo",
+    "kanalTransaksi": "langsung",
+    "metodePembayaran": "cash",
+    "tanggalTransaksi": "2025-11-26",
+    "biayaKirim": 0,
+    "status": "selesai"
+  },
+  {
+    "idTransaksi": "TR27112025003",
+    "namaPembeli": "Budi Santoso",
+    "nomorHandphone": "082112345678",
+    "alamatPembeli": "Jl. Kenanga No.7, Magelang",
+    "kanalTransaksi": "telepon",
+    "metodePembayaran": "QRIS",
+    "tanggalTransaksi": "2025-11-27",
+    "biayaKirim": 20000,
+    "status": "dalam proses"
+  },
+  {
+    "idTransaksi": "TR28112025004",
+    "namaPembeli": "Rina Anggraeni",
+    "nomorHandphone": "081355566677",
+    "alamatPembeli": "Jl. Dahlia No.9, Tegal",
+    "kanalTransaksi": "whatsapp",
+    "metodePembayaran": "transfer",
+    "tanggalTransaksi": "2025-11-28",
+    "biayaKirim": 12000,
+    "status": "selesai"
+  },
+  {
+    "idTransaksi": "TR29112025005",
+    "namaPembeli": "Joko Widodo",
+    "nomorHandphone": "081233344455",
+    "alamatPembeli": "Jl. Anggrek No.11, Purwokerto",
+    "kanalTransaksi": "langsung",
+    "metodePembayaran": "cash",
+    "tanggalTransaksi": "2025-11-29",
+    "biayaKirim": 0,
+    "status": "batal"
+  },
+  {
+    "idTransaksi": "TR30112025006",
+    "namaPembeli": "Dewi Lestari",
+    "nomorHandphone": "082199988877",
+    "alamatPembeli": "Jl. Cempaka No.20, Semarang",
+    "kanalTransaksi": "telepon",
+    "metodePembayaran": "transfer",
+    "tanggalTransaksi": "2025-11-30",
+    "biayaKirim": 18000,
+    "status": "selesai"
+  },
+  {
+    "idTransaksi": "TR01122025007",
+    "namaPembeli": "Ahmad Fauzi",
+    "nomorHandphone": "081277788899",
+    "alamatPembeli": "Jl. Kenari No.33, Salatiga",
+    "kanalTransaksi": "whatsapp",
+    "metodePembayaran": "QRIS",
+    "tanggalTransaksi": "2025-12-01",
+    "biayaKirim": 15000,
+    "status": "dalam proses"
+  },
+  {
+    "idTransaksi": "TR02122025008",
+    "namaPembeli": "Nina Kartika",
+    "nomorHandphone": "081244466655",
+    "alamatPembeli": "Jl. Flamboyan No.5, Solo",
+    "kanalTransaksi": "langsung",
+    "metodePembayaran": "cash",
+    "tanggalTransaksi": "2025-12-02",
+    "biayaKirim": 0,
+    "status": "selesai"
+  },
+  {
+    "idTransaksi": "TR03122025009",
+    "namaPembeli": "Rudy Hartono",
+    "nomorHandphone": "082166655544",
+    "alamatPembeli": "Jl. Sakura No.17, Magelang",
+    "kanalTransaksi": "telepon",
+    "metodePembayaran": "transfer",
+    "tanggalTransaksi": "2025-12-03",
+    "biayaKirim": 22000,
+    "status": "selesai"
+  },
+  {
+    "idTransaksi": "TR04122025010",
+    "namaPembeli": "Lina Marlina",
+    "nomorHandphone": "081299988877",
+    "alamatPembeli": "Jl. Teratai No.21, Tegal",
+    "kanalTransaksi": "whatsapp",
+    "metodePembayaran": "QRIS",
+    "tanggalTransaksi": "2025-12-04",
+    "biayaKirim": 15000,
+    "status": "dalam proses"
+  }
+]

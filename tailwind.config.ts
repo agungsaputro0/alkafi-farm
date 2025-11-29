@@ -18,6 +18,7 @@ const config: Config = {
       colors: {
         greenlogo: "#c6fe12",
         greentech: "#27c8c0",
+        whitegray: "#f6f8fa",
         footerblue: "#002904",
         footeruplist: "#007D00",
         background: "var(--background)",
@@ -55,6 +56,9 @@ const config: Config = {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
         spring: ['Spring', 'sans-serif'],
+      },
+       backgroundImage: {
+        alkafiFarm: "linear-gradient(to right, #5a3828,  #ef8c4fff)", 
       },
       animation: {
         wave: 'wave 1s infinite ease-in-out',

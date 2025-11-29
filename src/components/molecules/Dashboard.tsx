@@ -1,3 +1,4 @@
+import { FaDownload } from 'react-icons/fa';
 import DashboardPanels from '../atoms/DashboardPanel';
 import DistribusiUmurTernak from '../atoms/DistribusiUmurTernak';
 import GrafikPakan from '../atoms/GrafikPakan';
@@ -8,7 +9,9 @@ import PenugasanHarian from '../atoms/PenugasanHarian';
 import WelcomingPanel from '../atoms/WelcomingPanel';
 import WhiteSection from '../atoms/WhiteSection';
 import { useAuth } from '../hooks/AuthContext';
+import { useNavigate } from 'react-router-dom';
 const Dashboard = () => {
+  const navigate = useNavigate();
   const { userName } = useAuth();
   return (
     <section>
@@ -29,7 +32,13 @@ const Dashboard = () => {
             </div>
 
               {/* Kolom kanan (1/3) */}
-              <div className="flex flex-col w-full md:col-span-1 h-full">
+              <div className="flex flex-col gap-6 w-full md:col-span-1 h-full">
+                 <div
+                    onClick={() => navigate("/Report")}
+                    className={`w-full flex gap-2 text-xl hover:brightness-110 cursor-pointer transition duration-300 ease-in-out items-center justify-center bg-alkafiFarm h-[32px] border border-gray-200 backdrop-blur-md rounded-xl shadow-lg p-6 text-white font-semibold`}
+                  >
+                    <FaDownload className="text-xl" /> Unduh Laporan
+                  </div>
                 <div className="flex-grow flex">
                   <Leaderboard className="flex-grow" />
                 </div>

@@ -1,0 +1,133 @@
+[
+  {
+    "idKatalog": "KT001",
+    "tipe": "hewan",
+    "idHewanTernak": "HT001",
+    "namaProduk": "Sapi Bali Betina NT001",
+    "foto": [
+      "/assets/img/hewanternak/sapi_bali_1.jpg"
+    ],
+    "kategori": "Hewan Ternak, Sapi",
+    "stok": "1 ekor",
+    "harga": "18.500.000",
+    "deskripsi": "Sapi Bali betina sehat, rutin divaksin. Cocok untuk breeding."
+  },
+  {
+    "idKatalog": "KT002",
+    "tipe": "hewan",
+    "idHewanTernak": "HT002",
+    "namaProduk": "Sapi Limousin Betina NT002",
+    "foto": [
+      "/assets/img/hewanternak/sapi_limousin_1.jpg"
+    ],
+    "kategori": "Hewan Ternak, Sapi",
+    "stok": "1 ekor",
+    "harga": "21.000.000",
+    "deskripsi": "Sapi betina. Kondisi sehat dan stabil."
+  },
+  {
+    "idKatalog": "KT003",
+    "tipe": "hewan",
+    "idHewanTernak": "HT003",
+    "namaProduk": "Kambing Boer Betina NT003",
+    "foto": [
+      "/assets/img/hewanternak/kambing_boer_1.jpg"
+    ],
+    "kategori": "Hewan Ternak, Kambing",
+    "stok": "1 ekor",
+    "harga": "2.300.000",
+    "deskripsi": "Kambing muda, pakan hijauan + konsentrat. Sangat lincah."
+  },
+  {
+    "idKatalog": "KT004",
+    "tipe": "hewan",
+    "idHewanTernak": "HT004",
+    "namaProduk": "Kambing Boer Jantan NT004",
+    "foto": [
+      "/assets/img/hewanternak/kambing_boer_2.jpg"
+    ],
+    "kategori": "Hewan Ternak, Kambing",
+    "stok": "1 ekor",
+    "harga": "2.800.000",
+    "deskripsi": "Kambing jantan dewasa muda, cocok untuk pejantan."
+  },
+  {
+    "idKatalog": "KT005",
+    "tipe": "hewan",
+    "idHewanTernak": "HT005",
+    "namaProduk": "Domba Garut Jantan NT005",
+    "foto": [
+      "/assets/img/hewanternak/domba_garut_1.jpg",
+      "/assets/img/hewanternak/domba_garut_2.jpg"
+    ],
+    "kategori": "Hewan Ternak, Domba",
+    "stok": "1 ekor",
+    "harga": "3.900.000",
+    "deskripsi": "Domba Garut, pernah ikut kontes. Kondisi sangat prima."
+  },
+  {
+    "idKatalog": "KT006",
+    "tipe": "hewan",
+    "idHewanTernak": "HT006",
+    "namaProduk": "Sapi Bali Betina NT006",
+    "foto": [
+      "/assets/img/hewanternak/sapi_bali_2.jpg"
+    ],
+    "kategori": "Hewan Ternak, Sapi",
+    "stok": "1 ekor",
+    "harga": "16.800.000",
+    "deskripsi": "Sapi muda sehat, pertumbuhan stabil, cocok untuk penggemukan."
+  },
+  {
+    "idKatalog": "KT007",
+    "tipe": "hewan",
+    "idHewanTernak": "HT009",
+    "namaProduk": "Sapi Ongole Jantan NT009",
+    "foto": [
+      "/assets/img/hewanternak/sapi_limousin_2.jpg"
+    ],
+    "kategori": "Hewan Ternak, Sapi",
+    "stok": "1 ekor",
+    "harga": "22.500.000",
+    "deskripsi": "Sapi jantan penggemukan dengan progres berat sangat baik."
+  },
+  {
+    "idKatalog": "KT008",
+    "tipe": "produk",
+    "idHewanTernak": null,
+    "namaProduk": "Daging Sapi Premium 1 kg",
+    "foto": [
+       "/assets/img/hewanternak/daging_sapi.jpg"
+    ],
+    "kategori": "Produk Turunan, Daging",
+    "stok": "4",
+    "harga": "145.000",
+    "deskripsi": "Daging sapi segar premium, cocok untuk steak dan grill."
+  },
+  {
+    "idKatalog": "KT009",
+    "tipe": "produk",
+    "idHewanTernak": null,
+    "namaProduk": "Daging Kambing Fresh 1 kg",
+    "foto": [
+     "/assets/img/hewanternak/daging_kambing.jpg"
+    ],
+    "kategori": "Produk Turunan, Daging",
+    "stok": "10",
+    "harga": "110.000",
+    "deskripsi": "Daging kambing muda, bau minimal, cocok untuk gulai."
+  },
+  {
+    "idKatalog": "KT010",
+    "tipe": "produk",
+    "idHewanTernak": null,
+    "namaProduk": "Susu Kambing Etawa 1L",
+    "foto": [
+       "/assets/img/hewanternak/susu_etawa.webp"
+    ],
+    "kategori": "Produk Olahan",
+    "stok": "25",
+    "harga": "38.000",
+    "deskripsi": "Susu kambing etawa pasteurisasi, segar dan bergizi tinggi."
+  }
+]

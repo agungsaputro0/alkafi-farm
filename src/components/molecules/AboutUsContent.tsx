@@ -1,7 +1,8 @@
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import OurFocus from "../molecules/OurFocus";
 import AlkafiFarmRole from "../molecules/AlkafiFarmRole";
 import ContactUs from "./ContactUs";
+import { useLocation } from "react-router-dom";
 
 const teamMembers = [
   { name: "Agung Budi Saputro", img: "/assets/img/teams/agung.jpeg", role: "2702389631" },
@@ -12,6 +13,14 @@ const teamMembers = [
 ];
 
 const AboutUsContent: FC = () => {
+  const { state } = useLocation();
+
+  useEffect(() => {
+    if (state?.scrollTo) {
+      const el = document.getElementById(state.scrollTo);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [state]);
   return (
     <>
       <section className="pt-[65px] flex justify-center">
@@ -105,6 +114,7 @@ const AboutUsContent: FC = () => {
                 ))}
               </div>
             </section>
+             <div id="ContactUs" className="mb-20" />
             <ContactUs />
             {/* Mission and Vision Section */}
             

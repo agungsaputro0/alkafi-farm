@@ -1,0 +1,72 @@
+[
+  {
+    "idTransaksi": "TR25112025001",
+    "idKatalog": "KT001",
+    "quantity": 1,
+    "diskon": 0,
+    "subtotal": 18500000
+  },
+  {
+    "idTransaksi": "TR26112025002",
+    "idKatalog": "KT002",
+    "quantity": 1,
+    "diskon": 500000,
+    "subtotal": 20500000
+  },
+  {
+    "idTransaksi": "TR27112025003",
+    "idKatalog": "KT003",
+    "quantity": 1,
+    "diskon": 0,
+    "subtotal": 2300000
+  },
+  {
+    "idTransaksi": "TR28112025004",
+    "idKatalog": "KT004",
+    "quantity": 1,
+    "diskon": 100000,
+    "subtotal": 2700000
+  },
+  {
+    "idTransaksi": "TR29112025005",
+    "idKatalog": "KT005",
+    "quantity": 1,
+    "diskon": 0,
+    "subtotal": 3900000
+  },
+  {
+    "idTransaksi": "TR30112025006",
+    "idKatalog": "KT006",
+    "quantity": 1,
+    "diskon": 0,
+    "subtotal": 16800000
+  },
+  {
+    "idTransaksi": "TR01122025007",
+    "idKatalog": "KT007",
+    "quantity": 1,
+    "diskon": 0,
+    "subtotal": 22500000
+  },
+  {
+    "idTransaksi": "TR02122025008",
+    "idKatalog": "KT008",
+    "quantity": 2,
+    "diskon": 5000,
+    "subtotal": 285000
+  },
+  {
+    "idTransaksi": "TR03122025009",
+    "idKatalog": "KT009",
+    "quantity": 1,
+    "diskon": 0,
+    "subtotal": 110000
+  },
+  {
+    "idTransaksi": "TR04122025010",
+    "idKatalog": "KT010",
+    "quantity": 3,
+    "diskon": 2000,
+    "subtotal": 112000
+  }
+]

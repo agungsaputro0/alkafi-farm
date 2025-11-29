@@ -17,7 +17,7 @@ const WhiteSection: React.FC<WhiteSectionProps> = ({ children, className = "" })
         space-y-4 
         rounded-2xl
         border border-white/20 
-        bg-white
+        bg-whitegray
         backdrop-blur-sm 
         backdrop-saturate-150 
         shadow-[0_4px_30px_rgba(173,216,230,0.15)] 

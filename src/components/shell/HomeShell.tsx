@@ -15,7 +15,7 @@ const HomeShell = (props: AppShellProps) => {
 
     return (
         <main>
-            <div className="flex flex-col bg-[url('/assets/img/bg-homeshell-2.jpg')] bg-no-repeat bg-center bg-cover bg-fixed w-full min-h-screen overflow-y-auto">
+            <div className="flex flex-col bg-[url('/assets/img/bg-gradient.jpg')] bg-no-repeat bg-center bg-cover bg-fixed w-full min-h-screen overflow-y-auto">
             {/* <div className="flex flex-col bg-gradient-to-tr from-[#0f172a] via-[#0f4c5c] to-[#1b6a4a] bg-no-repeat bg-center bg-cover bg-fixed w-full min-h-screen overflow-y-auto"> */}
 
                 <HomeNavbar userName={userName} expanded={expanded} />

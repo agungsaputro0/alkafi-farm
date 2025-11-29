@@ -87,7 +87,7 @@ const LandingLayouts = (props: LandingProps) => {
 
             <Button
               message=""
-              onClick={() => navigate("/Contact")}
+              onClick={() => navigate("/AboutUs", { state: { scrollTo: "ContactUs" } })}
               variant="flex items-center justify-center gap-2 min-h-10 bg-transparent border-[0.22em] border-farmgrassgreen text-farmgrassgreen hover:bg-farmgreen hover:text-white px-6 rounded-full font-poppins"
             >
               <RiCustomerService2Line className="text-lg" />

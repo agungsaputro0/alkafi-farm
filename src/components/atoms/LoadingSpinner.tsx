@@ -3,7 +3,7 @@ import useIsLogin from '../hooks/UseIsLogin';
 const LoadingSpinner: React.FC = () => {
   const isLogin = useIsLogin();
   return (
-    <div className={`${isLogin ? "bg-[url('/assets/img/bg-homeshell.jpg')]" : "bg-[url('/assets/img/bg-main2.jpg')]"} bg-no-repeat bg-center bg-cover bg-fixed w-full h-screen flex flex-col items-center justify-center text-white`}>
+    <div className={`${isLogin ? "bg-[url('/assets/img/bg-gradient.jpg')]" : "bg-[url('/assets/img/bg-main2.jpg')]"} bg-no-repeat bg-center bg-cover bg-fixed w-full h-screen flex flex-col items-center justify-center text-white`}>
       {/* Logo dan nama */}
       <div className="flex items-center mb-8">
         <img

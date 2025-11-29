@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import LoadingSpinner from './components/atoms/LoadingSpinner';
 import StakeholderRoute from './components/hooks/StakeholderRoute';
 import RedirectIfLoggedIn from './components/hooks/RedirectIfLoggedIn';
+import AdminRoute from './components/hooks/AdminRoute';
 
 
 const Welcome = lazy(() => import('./components/pages/Welcome'));
@@ -30,6 +31,14 @@ const TambahRiwayatKesehatanHewan = lazy(() => import('./components/pages/Keseha
 const MonitoringSiklusHewan = lazy(() => import('./components/pages/MonitoringSiklus/MonitoringSiklusHewan'));
 const DetailMonitoringSiklus = lazy(() => import('./components/pages/MonitoringSiklus/DetailMonitoringSiklusHewanTernak'));
 const TambahRiwayatSiklus = lazy(() => import('./components/pages/MonitoringSiklus/TambahRiwayatSiklusHewanTernak'));
+const EKatalog = lazy(() => import('./components/pages/EKatalog/EKatalogLanding'));
+const TambahEKatalog = lazy(() => import('./components/pages/EKatalog/TambahKatalog'));
+const Transaksi = lazy(() => import('./components/pages/Transaksi/TransaksiLanding'));
+const TambahTransaksi = lazy(() => import('./components/pages/Transaksi/TambahTransaksi'));
+const TambahDetailTransaksi = lazy(() => import('./components/pages/Transaksi/TambahDetailTransaksi')); 
+const ManajemenPegawai = lazy(() => import('./components/pages/ManajemenPegawai/ManajemenPegawaiLanding')); 
+const TambahPegawai = lazy(() => import('./components/pages/ManajemenPegawai/TambahDataPegawai')); 
+const Report = lazy(() => import('./components/pages/Report/DownloadReportPage')); 
 
 
 const Users = lazy(() => import('./components/pages/Users'));
@@ -60,6 +69,14 @@ const App = () => {
         <Route path="/ForgotPassword" element={<RedirectIfLoggedIn><ForgotPasswordPage /></RedirectIfLoggedIn>} />
         <Route path="/ChangePassword" element={<RedirectIfLoggedIn><ChangePasswordPage /></RedirectIfLoggedIn>} />
         <Route path="/Home" element={<StakeholderRoute><Home /></StakeholderRoute>} />
+        <Route path="/e-katalog" element={<AdminRoute><EKatalog /></AdminRoute>} />
+        <Route path="/tambahKatalog" element={<AdminRoute><TambahEKatalog /></AdminRoute>} />
+        <Route path="/transaksi" element={<AdminRoute><Transaksi /></AdminRoute>} />
+        <Route path="/tambahtransaksi" element={<AdminRoute><TambahTransaksi /></AdminRoute>} />
+        <Route path="/tambahdetailTransaksi/:idTransaksi" element={<AdminRoute><TambahDetailTransaksi /></AdminRoute>} />
+        <Route path="/hris" element={<AdminRoute><ManajemenPegawai /></AdminRoute>} />
+        <Route path="/tambahPegawai" element={<AdminRoute><TambahPegawai /></AdminRoute>} />
+        <Route path="/report" element={<AdminRoute><Report /></AdminRoute>} />
         <Route path="/Profil" element={<StakeholderRoute><Profil /></StakeholderRoute>} />
         <Route path="/Users" element={<StakeholderRoute><Users /></StakeholderRoute>} />
         <Route path="/ternak/repository" element={<StakeholderRoute><RepositoryHewanTernak /></StakeholderRoute>} />

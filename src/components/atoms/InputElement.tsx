@@ -16,7 +16,7 @@ type CommonProps = {
 // Mode input biasa
 type NormalInputProps = CommonProps &
   InputHTMLAttributes<HTMLInputElement> & {
-    typeInput: "text" | "number" | "password";
+    typeInput: "text" | "number" | "password" | "email";
     onChange?: React.ChangeEventHandler<HTMLInputElement>;
   };
 

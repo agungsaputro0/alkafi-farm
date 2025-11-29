@@ -32,7 +32,7 @@ const HealthStatusCard: React.FC<HealthStatusCardProps> = ({
       {/* Bagian atas: Foto + Info */}
       <div className="flex flex-col md:flex-row gap-4">
         {/* Foto */}
-        <div className="w-full md:w-1/3 flex justify-center items-center bg-gray-200 rounded-md overflow-hidden">
+        <div className="w-full md:w-2/5 flex justify-center items-center bg-gray-200 rounded-md overflow-hidden">
           {fotoUrl ? (
             <img
               src={fotoUrl}
