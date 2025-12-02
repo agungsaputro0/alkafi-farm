@@ -10,23 +10,34 @@ interface TopTransaction {
   icon: JSX.Element;
 }
 
+const getLast30Days = () => {
+  const dates: Date[] = [];
+  const today = new Date();
+
+  for (let i = 0; i < 30; i++) {
+    const d = new Date();
+    d.setDate(today.getDate() - i);
+    dates.push(d);
+  }
+
+  return dates; // sudah dari terbaru -> terlama
+};
+
+
 // Utility membuat tanggal acak dalam bulan ini,
 // namun tidak melebihi tanggal hari ini
 const getRandomDatesThisMonth = (count: number) => {
-  const today = new Date();
-  const year = today.getFullYear();
-  const month = today.getMonth();
+  const dates = getLast30Days();
 
-  const maxDay = today.getDate(); // batas tanggal = hari ini
-  const used = new Set<number>();
-
-  while (used.size < count) {
-    used.add(Math.floor(Math.random() * maxDay) + 1);
+  // Fisher–Yates shuffle
+  for (let i = dates.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [dates[i], dates[j]] = [dates[j], dates[i]];
   }
 
-  return [...used]
-    .sort((a, b) => b - a) // dari terbaru → terlama
-    .map(day => new Date(year, month, day));
+  return dates
+    .slice(0, count)
+    .sort((a, b) => b.getTime() - a.getTime());
 };
 
 const randomDates = getRandomDatesThisMonth(5);
