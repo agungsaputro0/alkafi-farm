@@ -30,7 +30,6 @@ const Dashboard = () => {
                 </div>
               </div>
             </div>
-
               {/* Kolom kanan (1/3) */}
               <div className="flex flex-col gap-6 w-full md:col-span-1 h-full">
                  <div

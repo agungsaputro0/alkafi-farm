@@ -56,7 +56,7 @@ const KatalogCard: React.FC<KatalogCardProps> = ({
           </div>
 
           {/* Harga */}
-          <p className="mt-3 text-2xl font-extrabold text-farmgrassgreen">
+          <p className="mt-3 text-3xl font-extrabold text-farmgreen">
             Rp {harga}
           </p>
 

@@ -1,0 +1,78 @@
+[
+  {
+    "idJadwal": "JP001",
+    "namaJadwal": "Pemberian Pakan Pagi",
+    "tanggalMulai": "2025-12-04",
+    "frekuensiPengulangan": "hari ini",
+    "customValue" : "",
+    "catatan": "Jadwal prioritas untuk ternak besar",
+    "detail": [
+      {
+        "jenisPakan": "Rumput Segar",
+        "targetPemberian": "8 kg per ekor",
+        "kelompokTernak": "Sapi Kandang KD001",
+        "jamMulai": "09:00",
+        "jamSelesai": "09:30",
+        "catatan": "Pastikan rumput tidak basah dan bebas kotoran",
+        "petugas": ["PG006", "PG009"]
+      }
+    ]
+  },
+  {
+    "idJadwal": "JP002",
+    "namaJadwal": "Pemberian Pakan Siang",
+    "tanggalMulai": "2025-12-04",
+    "customValue" : "",
+    "frekuensiPengulangan": "per tiga hari",
+    "catatan": "Pakan tambahan untuk menjaga energi ternak",
+    "detail": [
+      {
+        "jenisPakan": "Konsentrat Kambing",
+        "targetPemberian": "300 gram per ekor",
+        "kelompokTernak": "Kambing Kandang KD001",
+        "jamMulai": "15:00",
+        "jamSelesai": "15:20",
+        "catatan": "Gunakan konsentrat kering dan simpan dalam wadah tertutup",
+        "petugas": ["PG007"]
+      }
+    ]
+  },
+  {
+    "idJadwal": "JP003",
+    "namaJadwal": "Pemberian Suplemen Mingguan",
+    "tanggalMulai": "2025-12-04",
+    "customValue" : "",
+    "frekuensiPengulangan": "mingguan",
+    "catatan": "Program peningkatan imunitas ternak",
+    "detail": [
+      {
+        "jenisPakan": "Vitamin Cair",
+        "targetPemberian": "10 ml per ekor dicampur air minum",
+        "kelompokTernak": "Domba Kandang KD002",
+        "jamMulai": "10:30",
+        "jamSelesai": "11:00",
+        "catatan": "Gunakan sarung tangan saat mencampur vitamin",
+        "petugas": ["PG008", "PG010"]
+      }
+    ]
+  },
+  {
+    "idJadwal": "JP004",
+    "namaJadwal": "Pemberian Pakan Ekstra",
+    "tanggalMulai": "2025-12-04",
+    "customValue" : "",
+    "frekuensiPengulangan": "custom",
+    "catatan": "Khusus untuk ternak dalam kondisi stres atau pemulihan",
+    "detail": [
+      {
+        "jenisPakan": "Hijauan Fermentasi",
+        "targetPemberian": "2 kg per ekor",
+        "kelompokTernak": "Sapi dan Domba Kandang KD003",
+        "jamMulai": "08:00",
+        "jamSelesai": "08:25",
+        "catatan": "Pastikan fermentasi tidak terlalu asam",
+        "petugas": ["PG006", "PG007", "PG010"]
+      }
+    ]
+  }
+]

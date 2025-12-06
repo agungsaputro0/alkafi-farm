@@ -47,12 +47,12 @@ const DashboardPanels: React.FC<DashboardPanelsProps> = ({ className = "" }) => 
         {/* Panel 3: Kegiatan Harian Selesai */}
         <div className="flex items-center p-4 rounded-2xl shadow-md transition self-stretch border border-gray-200
                       text-farmBrown hover:shadow-xl hover:bg-greenlogo/40">
-          <div className="text-4xl mr-4 text-farmLiteGold">
+          <div className="text-4xl mr-4 text-gray-700">
             <FaClipboardCheck />
           </div>
           <div>
             <h3 className="text-sm font-medium text-farmdarkbrown">Kegiatan Harian Selesai</h3>
-            <p className="text-2xl font-bold text-farmlightbrown leading-tight">4 Tugas</p>
+            <p className="text-2xl font-bold text-gray-700 leading-tight">4 Tugas</p>
             <p className="text-xs text-farmdarkbrown">Termasuk pakan & pembersihan</p>
           </div>
         </div>

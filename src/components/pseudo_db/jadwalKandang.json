@@ -1,0 +1,46 @@
+[
+  {
+    "idJadwal": "JK001",
+    "idKandang": "KD001",
+    "tanggal": "2025-12-04",
+    "waktu": "09:00",
+    "frekuensi": "hari ini",
+    "jenisPembersihan": "Pembersihan Lantai & Penggantian Alas",
+    "peralatanDanBahan": "Sapu lantai\nSekop kotoran\nAlas kering baru",
+    "catatan": "Prioritas karena kondisi kandang ramai",
+    "petugas": ["PG006", "PG009"]
+  },
+  {
+    "idJadwal": "JK002",
+    "idKandang": "KD001",
+    "tanggal": "2025-12-04",
+    "waktu": "15:00",
+    "frekuensi": "per tiga hari",
+    "jenisPembersihan": "Sanitasi Tempat Pakan & Minum",
+    "peralatanDanBahan": "Sikat halus\nLarutan disinfektan",
+    "catatan": null,
+    "petugas": ["PG007"]
+  },
+  {
+    "idJadwal": "JK003",
+    "idKandang": "KD002",
+    "tanggal": "2025-12-04",
+    "waktu": "10:30",
+    "frekuensi": "mingguan",
+    "jenisPembersihan": "Pengecekan Ventilasi & Penyemprotan Insektisida",
+    "peralatanDanBahan": "Alat semprot insektisida\nSarung tangan\nMasker pelindung",
+    "catatan": "Kandang sedang menjalani perbaikan ringan",
+    "petugas": ["PG008", "PG010"]
+  },
+  {
+    "idJadwal": "JK004",
+    "idKandang": "KD003",
+    "tanggal": "2025-12-04",
+    "waktu": "08:00",
+    "frekuensi": "custom",
+    "jenisPembersihan": "Deep Cleaning Total",
+    "peralatanDanBahan": "Sikat besar\nLarutan disinfektan\nAlat cuci tekanan tinggi",
+    "catatan": "Dilakukan sesuai permintaan supervisor",
+    "petugas": ["PG006", "PG007", "PG010"]
+  }
+]

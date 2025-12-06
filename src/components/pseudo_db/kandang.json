@@ -1,0 +1,32 @@
+[
+  {
+    "idKandang": "KD001",
+    "namaKandang": "Kandang A1",
+    "luas": 25,
+    "kapasitas": 12,
+    "peruntukan": "Kambing",
+    "lokasi": "Blok A",
+    "status": "Aktif",
+    "kondisi": "Baik"
+  },
+  {
+    "idKandang": "KD002",
+    "namaKandang": "Kandang B2",
+    "luas": 18,
+    "kapasitas": 8,
+    "peruntukan": "Domba",
+    "lokasi": "Blok B",
+    "status": "Perbaikan",
+    "kondisi": "Sedang Pemeliharaan"
+  },
+  {
+    "idKandang": "KD003",
+    "namaKandang": "Kandang C3",
+    "luas": 30,
+    "kapasitas": 6,
+    "peruntukan": "Sapi",
+    "lokasi": "Blok C",
+    "status": "Aktif",
+    "kondisi": "Baik"
+  }
+]

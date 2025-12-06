@@ -1,7 +1,7 @@
 import { forwardRef, InputHTMLAttributes, ReactNode } from "react";
 import Label from "./Label";
-import { DatePicker } from "antd";
-import type { DatePickerProps } from "antd";
+import { DatePicker, TimePicker } from "antd";
+import type { DatePickerProps, TimePickerProps } from "antd";
 import type { Dayjs } from "dayjs";
 
 type CommonProps = {
@@ -13,12 +13,19 @@ type CommonProps = {
   customElement?: ReactNode;
 };
 
-// Mode input biasa
+// Mode input biasa (text, number, password, email)
 type NormalInputProps = CommonProps &
   InputHTMLAttributes<HTMLInputElement> & {
     typeInput: "text" | "number" | "password" | "email";
     onChange?: React.ChangeEventHandler<HTMLInputElement>;
   };
+
+// Mode time (TimePicker)
+type TimeInputProps = CommonProps & {
+  typeInput: "time";
+  value?: Dayjs | null;
+  onChange?: (time: Dayjs | null, timeString: string) => void;
+} & Omit<TimePickerProps, "onChange" | "value">;
 
 // Mode year (DatePicker)
 type YearInputProps = CommonProps & {
@@ -34,7 +41,11 @@ type DateInputProps = CommonProps & {
   onChange?: (date: Dayjs | null, dateString: string) => void;
 } & Omit<DatePickerProps, "picker" | "onChange" | "value">;
 
-type InputElementProps = NormalInputProps | YearInputProps | DateInputProps;
+type InputElementProps =
+  | NormalInputProps
+  | YearInputProps
+  | DateInputProps
+  | TimeInputProps;
 
 const InputElement = forwardRef<HTMLInputElement, InputElementProps>(
   (props, ref) => {
@@ -60,7 +71,6 @@ const InputElement = forwardRef<HTMLInputElement, InputElementProps>(
           labelMessage={labelMessage}
         />
 
-        {/* Year Picker */}
         {typeInput === "year" ? (
           <DatePicker
             picker="year"
@@ -82,6 +92,17 @@ const InputElement = forwardRef<HTMLInputElement, InputElementProps>(
             }
             style={{ width: "100%", height: "40px" }}
             {...(rest as DatePickerProps)}
+          />
+        ) : typeInput === "time" ? (
+          <TimePicker
+            placeholder={inputPlaceholder}
+            format="HH:mm"
+            className={
+              inputStyle +
+              " !rounded-none !border-t-0 !border-l-0 !border-r-0 shadow-none"
+            }
+            style={{ width: "100%", height: "40px" }}
+            {...(rest as TimePickerProps)}
           />
         ) : customElement ? (
           customElement

@@ -13,6 +13,7 @@ const Welcome = lazy(() => import('./components/pages/Welcome'));
 const LoginPage = lazy(() => import('./components/pages/Login'));
 const Home = lazy(() => import('./components/pages/Home'));
 const AboutUs = lazy(() => import('./components/pages/AboutUs'));
+const Catalog = lazy(() => import('./components/pages/CatalogPage'));
 const Profil = lazy(() => import('./components/pages/Profil'));
 const SignUpPage = lazy(() => import('./components/pages/SignUp'));
 const ResendActivationPage = lazy(() => import('./components/pages/ResendActivation'));
@@ -39,6 +40,12 @@ const TambahDetailTransaksi = lazy(() => import('./components/pages/Transaksi/Ta
 const ManajemenPegawai = lazy(() => import('./components/pages/ManajemenPegawai/ManajemenPegawaiLanding')); 
 const TambahPegawai = lazy(() => import('./components/pages/ManajemenPegawai/TambahDataPegawai')); 
 const Report = lazy(() => import('./components/pages/Report/DownloadReportPage')); 
+const JadwalPembersihanKandang = lazy(() => import('./components/pages/Jadwal/JadwalPembersihanKandang')); 
+const TambahJadwalPembersihanKandang = lazy(() => import('./components/pages/Jadwal/TambahJadwalPembersihanKandang')); 
+const JadwalPemberianPakan = lazy(() => import('./components/pages/Jadwal/JadwalPemberianPakan')); 
+const TambahJadwalPemberianPakan = lazy(() => import('./components/pages/Jadwal/TambahJadwalPemberianPakan')); 
+const TambahDetailJadwalPemberianPakan = lazy(() => import('./components/pages/Jadwal/TambahDetailJadwalPakan')); 
+const TambahPenugasanPakan = lazy(() => import('./components/pages/Jadwal/TambahPenugasanPakan')); 
 
 
 const Users = lazy(() => import('./components/pages/Users'));
@@ -63,6 +70,7 @@ const App = () => {
         <Route path="/" element={<Navigate to="/Welcome" />} />
         <Route path="/Welcome" element={<RedirectIfLoggedIn><Welcome /></RedirectIfLoggedIn>} />
         <Route path="/AboutUs" element={<RedirectIfLoggedIn><AboutUs /></RedirectIfLoggedIn>} />
+        <Route path="/Catalog" element={<RedirectIfLoggedIn><Catalog /></RedirectIfLoggedIn>} />
         <Route path="/Login" element={<RedirectIfLoggedIn><LoginPage /></RedirectIfLoggedIn>} />
         <Route path="/SignUp" element={<RedirectIfLoggedIn><SignUpPage /></RedirectIfLoggedIn>} />
         <Route path="/ResendAktivasi" element={<RedirectIfLoggedIn><ResendActivationPage /></RedirectIfLoggedIn>} />
@@ -79,6 +87,12 @@ const App = () => {
         <Route path="/report" element={<AdminRoute><Report /></AdminRoute>} />
         <Route path="/Profil" element={<StakeholderRoute><Profil /></StakeholderRoute>} />
         <Route path="/Users" element={<StakeholderRoute><Users /></StakeholderRoute>} />
+        <Route path="/jadwal/kandang" element={<StakeholderRoute><JadwalPembersihanKandang /></StakeholderRoute>} />
+        <Route path="/tambahJadwalKandang" element={<StakeholderRoute><TambahJadwalPembersihanKandang /></StakeholderRoute>} />
+        <Route path="/jadwal/pakan" element={<StakeholderRoute><JadwalPemberianPakan /></StakeholderRoute>} />
+        <Route path="/tambahJadwalPakan" element={<StakeholderRoute><TambahJadwalPemberianPakan /></StakeholderRoute>} />
+        <Route path="/jadwal/pakan/:idJadwal" element={<StakeholderRoute><TambahDetailJadwalPemberianPakan /></StakeholderRoute>} />
+        <Route path="/tambahPenugasanPakan/:idJadwal" element={<StakeholderRoute><TambahPenugasanPakan /></StakeholderRoute>} />
         <Route path="/ternak/repository" element={<StakeholderRoute><RepositoryHewanTernak /></StakeholderRoute>} />
         <Route path="/ternak/tambahHewan" element={<StakeholderRoute><TambahHewanTernak /></StakeholderRoute>} />
         <Route path="/ternak/penimbangan" element={<StakeholderRoute><RiwayatPenimbangan /></StakeholderRoute>} />
