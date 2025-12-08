@@ -62,7 +62,6 @@ const KatalogCard: React.FC<KatalogCardProps> = ({
 
           {/* Deskripsi */}
           <div className="mt-3">
-            <p className="text-xs italic text-gray-500">Deskripsi:</p>
             <p className="text-sm text-gray-700 leading-relaxed">
               {deskripsi}
             </p>
