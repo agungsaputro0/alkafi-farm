@@ -6,6 +6,7 @@ import { useAuth } from "../hooks/AuthContext";
 import { GiGoat } from "react-icons/gi";
 import { MdGrass, MdOutlineEditCalendar } from "react-icons/md";
 import { FaSuitcaseMedical } from "react-icons/fa6";
+import { BiTask } from "react-icons/bi";
 
 
 const { Sider } = Layout;
@@ -26,12 +27,16 @@ const PortalSidebar: React.FC = () => {
 
   const handleRedirect = (path: string) => navigate(path);
 
-  const menuItems: MenuItem[] = [
+  // Misal userRole sudah didefinisikan sebelumnya
+let menuItems: MenuItem[] = [];
+
+if (userRole === 2) {
+  menuItems = [
     {
       key: "dashboard",
       label: "Home",
       icon: <HomeOutlined />,
-      path: userRole === 1 ? "/Home" : "/Portal",
+      path: "/Portal",
     },
     {
       key: "hewan_ternak",
@@ -48,13 +53,13 @@ const PortalSidebar: React.FC = () => {
       key: "stok_pakan",
       label: "Stok Pakan",
       icon: <MdGrass />,
-      path: userRole === 1 ? "/Home" : "/StokPakan",
+      path: "/StokPakan",
     },
     {
       key: "gudang_obat",
       label: "Gudang Obat",
       icon: <FaSuitcaseMedical />,
-      path: userRole === 1 ? "/Home" : "/GudangObat",
+      path: "/GudangObat",
     },
     {
       key: "jadwal",
@@ -66,7 +71,22 @@ const PortalSidebar: React.FC = () => {
       ],
     },
   ];
-
+} else if (userRole === 3) {
+  menuItems = [
+    {
+      key: "dashboard",
+      label: "Home",
+      icon: <HomeOutlined />,
+      path: "/Portal",
+    },
+    {
+      key: "task_list",
+      label: "Task List",
+      icon: <BiTask />,
+      path: "/TaskList",
+    },
+  ];
+}
   return (
     <Sider
       width={expanded ? 210 : 80}

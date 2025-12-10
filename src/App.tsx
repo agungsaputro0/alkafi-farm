@@ -46,6 +46,8 @@ const JadwalPemberianPakan = lazy(() => import('./components/pages/Jadwal/Jadwal
 const TambahJadwalPemberianPakan = lazy(() => import('./components/pages/Jadwal/TambahJadwalPemberianPakan')); 
 const TambahDetailJadwalPemberianPakan = lazy(() => import('./components/pages/Jadwal/TambahDetailJadwalPakan')); 
 const TambahPenugasanPakan = lazy(() => import('./components/pages/Jadwal/TambahPenugasanPakan')); 
+const TaskList = lazy(() => import('./components/pages/TaskList')); 
+const DetailTugasPakan = lazy(() => import('./components/pages/DetailTugasPakan')); 
 
 
 const Users = lazy(() => import('./components/pages/Users'));
@@ -107,6 +109,8 @@ const App = () => {
         <Route path="/GudangObat/tambahDataObatdanSuplemen" element={<StakeholderRoute><TambahObatdanSuplemen /></StakeholderRoute>} />
         <Route path="/StokPakan" element={<StakeholderRoute><GudangPakan /></StakeholderRoute>} />
         <Route path="/StokPakan/tambahPerolehanPakan" element={<StakeholderRoute><TambahPerolehanPakan /></StakeholderRoute>} />
+        <Route path="/TaskList" element={<StakeholderRoute><TaskList /></StakeholderRoute>} />
+        <Route path="/detailTugasPakan/:id" element={<StakeholderRoute><DetailTugasPakan /></StakeholderRoute>} />
 
         <Route path="/TambahUser" element={<StakeholderRoute><AddUser /></StakeholderRoute>} />
         <Route path="/UpdateUser/:tipe/:uid" element={<StakeholderRoute><UpdateUser /></StakeholderRoute>} />

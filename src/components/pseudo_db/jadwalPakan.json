@@ -68,8 +68,8 @@
         "jenisPakan": "Hijauan Fermentasi",
         "targetPemberian": "2 kg per ekor",
         "kelompokTernak": "Sapi dan Domba Kandang KD003",
-        "jamMulai": "08:00",
-        "jamSelesai": "08:25",
+        "jamMulai": "14:00",
+        "jamSelesai": "15:25",
         "catatan": "Pastikan fermentasi tidak terlalu asam",
         "petugas": ["PG006", "PG007", "PG010"]
       }

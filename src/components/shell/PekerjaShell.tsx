@@ -1,24 +1,25 @@
 // src/components/shell/HomeShell.tsx
 import React, { useState } from 'react';
-import HomeNavbar from '../organisms/HomeNavbar';
-import Sidebar from '../organisms/Sidebar';
+
 import { useAuth } from '../hooks/AuthContext';
+import MobileBottomNav from '../organisms/MobileHomeNav';
+import PekerjaNavbar from '../organisms/PekerjaNavbar';
 
 
 type AppShellProps = {
     children: React.ReactNode;
 }
 
-const HomeShell = (props: AppShellProps) => {
+const PekerjaShell = (props: AppShellProps) => {
     const [expanded, setExpanded] = useState(false);
-    const { userName, loading } = useAuth();
+    const { loading } = useAuth();
 
     return (
         <main>
             <div className="flex flex-col bg-[url('/assets/img/bg-homeshell.jpg')] bg-no-repeat bg-center bg-cover bg-fixed w-full min-h-screen overflow-y-auto">
             {/* <div className="flex flex-col bg-gradient-to-tr from-[#0f172a] via-[#0f4c5c] to-[#1b6a4a] bg-no-repeat bg-center bg-cover bg-fixed w-full min-h-screen overflow-y-auto"> */}
 
-                <HomeNavbar userName={userName} expanded={expanded} />
+                <PekerjaNavbar />
     
                 {/* Menambahkan kondisi loading */}
                 {loading ? (
@@ -32,7 +33,6 @@ const HomeShell = (props: AppShellProps) => {
                             onMouseEnter={() => setExpanded(true)}
                             onMouseLeave={() => setExpanded(false)}
                         >
-                            <Sidebar />
                         </div>
     
                         {/* Menambahkan class dinamis untuk konten */}
@@ -41,9 +41,10 @@ const HomeShell = (props: AppShellProps) => {
                         </div>
                     </div>
                 )}
+                <MobileBottomNav />
             </div>
         </main>
     );
 };
 
-export default HomeShell;
+export default PekerjaShell;
