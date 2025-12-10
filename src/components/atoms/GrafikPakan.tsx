@@ -7,6 +7,7 @@ import {
   Legend,
   ResponsiveContainer,
   CartesianGrid,
+  Cell,
 } from "recharts";
 import { Tabs } from "antd";
 
@@ -21,11 +22,66 @@ export default function GrafikPakan() {
     { bulan: "Jul", hasilSendiri: 400, pembelian: 90, penggunaan: 495 },
   ];
 
-  const stokData = [
-    { namaJenisPakan: "Konsentrat Protein Tinggi", StokPakan: 750 },
-    { namaJenisPakan: "Pakan Hijauan Kering (Hay)", StokPakan: 1500 },
-    { namaJenisPakan: "Mineral dan Premix", StokPakan: 100 },
-    { namaJenisPakan: "Pakan Pengganti Susu (CMR)", StokPakan: 50 },
+  // Warna untuk stok aktual per jenis — beri tipe Record<string,string>
+  const warnaStok: Record<string, string> = {
+    "Konsentrat Protein Tinggi": "#8b5cf6",
+    "Pakan Hijauan Kering (Hay)": "#22c55e",
+    "Mineral dan Premix": "#3b82f6",
+    "Pakan Pengganti Susu (CMR)": "#f59e0b",
+  };
+
+  const CustomLegend = () => {
+  return (
+    <div className="flex flex-wrap gap-4 text-sm mt-2">
+      {/* Legend stok minimal */}
+      <div className="flex items-center gap-1">
+        <span className="inline-block w-3 h-3 rounded-sm bg-[#ff4d4f]" />
+        <span>Stok Minimal</span>
+      </div>
+
+      {/* Legend untuk stok aktual tiap jenis */}
+      {Object.keys(warnaStok).map((nama) => (
+        <div key={nama} className="flex items-center gap-1">
+          <span
+            className="inline-block w-3 h-3 rounded-sm"
+            style={{ backgroundColor: warnaStok[nama] }}
+          />
+          <span>{nama}</span>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+
+  type StokItem = {
+    namaJenisPakan: string;
+    StokPakan: number;
+    stokMinimal: number;
+  };
+
+  // Data stok + ambang batas (lebih variatif)
+  const stokData: StokItem[] = [
+    {
+      namaJenisPakan: "Pakan Hijauan Kering (Hay)",
+      StokPakan: 1800,
+      stokMinimal: 1200,
+    },
+    {
+      namaJenisPakan: "Konsentrat Protein Tinggi",
+      StokPakan: 500, // di bawah ambang → tapi warnanya tetap ungu
+      stokMinimal: 800,
+    },
+    {
+      namaJenisPakan: "Mineral dan Premix",
+      StokPakan: 150,
+      stokMinimal: 100,
+    },
+    {
+      namaJenisPakan: "Pakan Pengganti Susu (CMR)",
+      StokPakan: 40, // di bawah ambang
+      stokMinimal: 60,
+    },
   ];
 
   return (
@@ -38,7 +94,9 @@ export default function GrafikPakan() {
             label: "Grafik Pemakaian & Pemasukan",
             children: (
               <>
-                <h3 className="text-lg font-bold text-center">Penggunaan & Perolehan Pakan</h3>
+                <h3 className="text-lg font-bold text-center">
+                  Penggunaan & Perolehan Pakan
+                </h3>
                 <p className="text-center text-sm text-gray-700 mb-2">
                   Perbandingan antara pakan hasil sendiri, pembelian, dan total penggunaan
                 </p>
@@ -48,10 +106,7 @@ export default function GrafikPakan() {
                     <BarChart data={data}>
                       <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
                       <XAxis dataKey="bulan" stroke="#45210aff" />
-                      <YAxis
-                        stroke="#45210aff"
-                        label={{ value: "kg", angle: -90, position: "insideLeft", fill: "white" }}
-                      />
+                      <YAxis stroke="#45210aff" />
                       <Tooltip
                         contentStyle={{
                           backgroundColor: "#45210aff",
@@ -59,16 +114,9 @@ export default function GrafikPakan() {
                           border: "none",
                           color: "#fff",
                         }}
-                        formatter={(value, name) => [
-                          `${value} kg`,
-                          name === "hasilSendiri"
-                            ? "Hasil Sendiri"
-                            : name === "pembelian"
-                            ? "Pembelian"
-                            : "Total Penggunaan",
-                        ]}
                       />
-                      <Legend wrapperStyle={{ color: "white" }} />
+                      <Legend wrapperStyle={{ color: "black" }} />
+
                       <Bar dataKey="hasilSendiri" stackId="a" fill="#86efac" />
                       <Bar dataKey="pembelian" stackId="a" fill="#facc15" />
                       <Bar dataKey="penggunaan" fill="#fb923c" radius={[4, 4, 0, 0]} />
@@ -82,14 +130,17 @@ export default function GrafikPakan() {
               </>
             ),
           },
+
           {
             key: "2",
             label: "Statistik Stok per Jenis",
             children: (
               <>
-                <h3 className="text-lg font-bold text-center">Jumlah Stok Tersedia per Jenis</h3>
+                <h3 className="text-lg font-bold text-center">
+                  Jumlah Stok Tersedia per Jenis
+                </h3>
                 <p className="text-center text-sm text-gray-700 mb-3">
-                  Stok minimal pakan berdasarkan jenis
+                  Perbandingan stok minimal dan stok aktual
                 </p>
 
                 <div className="h-[320px]">
@@ -102,6 +153,7 @@ export default function GrafikPakan() {
                         tick={{ fontSize: 10 }}
                       />
                       <YAxis stroke="#45210aff" />
+
                       <Tooltip
                         contentStyle={{
                           backgroundColor: "#fff",
@@ -109,10 +161,25 @@ export default function GrafikPakan() {
                           border: "none",
                           color: "#084724",
                         }}
-                        formatter={(value) => [`${value} kg`, "Stok"]}
+                        formatter={(value, name) => [
+                          `${value} kg`,
+                          name === "StokPakan" ? "Stok Aktual" : "Stok Minimal",
+                        ]}
                       />
-                      <Legend wrapperStyle={{ color: "white" }} />
-                      <Bar dataKey="StokPakan" fill="#084724" radius={[4, 4, 0, 0]} />
+
+                      <CustomLegend />
+
+                      {/* Bar stok minimal */}
+                      <Bar dataKey="stokMinimal" fill="#ff4d4f" radius={[4, 4, 0, 0]} />
+
+                      {/* Bar stok aktual */}
+                      <Bar dataKey="StokPakan" radius={[4, 4, 0, 0]}>
+                        {stokData.map((entry, idx) => {
+                          // aman: ambil warna dari map, fallback jika tidak ada
+                          const warna = warnaStok[entry.namaJenisPakan] ?? "#8884d8";
+                          return <Cell key={idx} fill={warna} />;
+                        })}
+                      </Bar>
                     </BarChart>
                   </ResponsiveContainer>
                 </div>

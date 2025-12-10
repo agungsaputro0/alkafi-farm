@@ -23,9 +23,14 @@ const WelcomingPanel: React.FC<WelcomingPanelProps> = ({ userName }) => {
 
       <div className="flex items-center p-4 bg-white/10 backdrop-blur-md border border-gray-200 rounded-2xl shadow transition hover:shadow-xl">
         <img
-          src={avatarUrl}
+          src={avatarUrl || '/assets/img/userDefault.png'}
           alt={userName}
           className="w-20 h-20 rounded-full mr-4 border-2 border-white/30"
+          onError={(e) => {
+                          const target = e.currentTarget as HTMLImageElement;
+                          target.onerror = null;
+                          target.src = '/assets/img/userDefault.png';
+                        }}
         />
         <div className="">
           <h3 className="text-lg font-semibold text-farmdarkestbrown">{user.namaPengguna}</h3>
