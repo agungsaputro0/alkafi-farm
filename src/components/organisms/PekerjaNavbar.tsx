@@ -1,19 +1,18 @@
 import { Disclosure } from '@headlessui/react';
 import { UseScroll } from '../hooks/UseScroll';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import useIsMobile from '../hooks/UseIsMobile';
 
-const rightNav = [
-  { name: 'Portal', to: '/Portal', variant: 'outline' },
-];
+// const rightNav = [
+// ];
 
-function classNames(...classes: string[]): string {
-  return classes.filter(Boolean).join(' ');
-}
+// function classNames(...classes: string[]): string {
+//   return classes.filter(Boolean).join(' ');
+// }
 
 const PekerjaNavbar = () => {
   const isScrolled = UseScroll();
-  const location = useLocation();
+  // const location = useLocation();
   const isMobile = useIsMobile();
 
   return (
@@ -59,7 +58,7 @@ const PekerjaNavbar = () => {
               {/* RIGHT NAV */}
               <div className="hidden smweb:flex items-center">
                  <div className="flex items-center px-2 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 shadow-inner">
-                {rightNav.map((item) => {
+                {/* {rightNav.map((item) => {
                   const isActive =
                     location.pathname.toLowerCase() === item.to.toLowerCase();
                   const baseStyle =
@@ -83,7 +82,7 @@ const PekerjaNavbar = () => {
                       {item.name}
                     </Link>
                   );
-                })}
+                })} */}
               </div>
             </div>
 
