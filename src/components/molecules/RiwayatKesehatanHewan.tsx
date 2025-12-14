@@ -45,7 +45,7 @@ const RiwayatKesehatanHewan = () => {
     if (!hewanItem) return setHewan(null);
     setHewan(hewanItem);
 
-    const localRiwayat = JSON.parse(localStorage.getItem("riwayatKesehatanBaru") || "[]");
+    const localRiwayat = JSON.parse(localStorage.getItem("RiwayatKesehatanBaru") || "[]");
     const combinedRiwayat = [
       ...riwayatkesehatanData.filter((r) => r.idHewanTernak === hewanItem.idHewanTernak),
       ...localRiwayat.filter((r: any) => r.idHewanTernak === hewanItem.idHewanTernak),

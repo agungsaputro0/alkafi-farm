@@ -14,7 +14,7 @@
         "jamMulai": "09:00",
         "jamSelesai": "09:30",
         "catatan": "Pastikan rumput tidak basah dan bebas kotoran",
-        "petugas": ["PG006", "PG009"]
+        "petugas": ["PG20102025006", "PG20102025009"]
       }
     ]
   },
@@ -33,7 +33,7 @@
         "jamMulai": "15:00",
         "jamSelesai": "15:20",
         "catatan": "Gunakan konsentrat kering dan simpan dalam wadah tertutup",
-        "petugas": ["PG007"]
+        "petugas": ["PG20102025007"]
       }
     ]
   },
@@ -52,7 +52,7 @@
         "jamMulai": "10:30",
         "jamSelesai": "11:00",
         "catatan": "Gunakan sarung tangan saat mencampur vitamin",
-        "petugas": ["PG008", "PG010"]
+        "petugas": ["PG20102025008", "PG20102025010"]
       }
     ]
   },
@@ -71,7 +71,7 @@
         "jamMulai": "14:00",
         "jamSelesai": "15:25",
         "catatan": "Pastikan fermentasi tidak terlalu asam",
-        "petugas": ["PG006", "PG007", "PG010"]
+        "petugas": ["PG20102025006", "PG20102025007", "PG20102025010"]
       }
     ]
   }

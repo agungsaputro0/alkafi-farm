@@ -2,7 +2,7 @@
 import { Fragment } from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import { UseScroll } from '../hooks/UseScroll';
 import { handleLogout as logout } from '../hooks/HandleLogin';
 import { FaBell } from 'react-icons/fa';
@@ -53,10 +53,10 @@ const HomeNavbar = ({ userName, expanded }: HomeNavbarProps) => {
   };
 
 
-  const navigate = useNavigate();
-  const handleProfileClick = () => {
-    navigate('/Profil'); 
-  };
+  // const navigate = useNavigate();
+  // const handleProfileClick = () => {
+  //   navigate('/Profil'); 
+  // };
 
   const formatUserName = (name: string | null) => {
     if (!name) return 'Akun'; 
@@ -150,7 +150,7 @@ const HomeNavbar = ({ userName, expanded }: HomeNavbarProps) => {
                   >
                     <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right bg-white/90 rounded-lg shadow-left-bottom-light border border-gray-400 py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                       <div className="py-1" role="none">
-                        <Menu.Item>
+                        {/* <Menu.Item>
                           {({ active }) => (
                             <button
                               onClick={handleProfileClick}
@@ -162,7 +162,7 @@ const HomeNavbar = ({ userName, expanded }: HomeNavbarProps) => {
                               Profil
                             </button>
                           )}
-                        </Menu.Item>
+                        </Menu.Item> */}
                         <Menu.Item>
                           {({ active }) => (
                             <button

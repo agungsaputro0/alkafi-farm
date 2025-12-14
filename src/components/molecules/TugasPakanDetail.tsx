@@ -157,7 +157,7 @@ export default function PakanDetail(): JSX.Element {
   if (!jadwal || !jadwal.idJadwal) {
     return (
       <div className="px-4 py-20">
-        <div className="max-w-3xl mx-auto p-6 bg-white/20 border border-white/20 rounded-2xl backdrop-blur-md text-white text-center">
+        <div className="max-w-3xl mb-20 mx-auto p-6 bg-white/20 border border-white/20 rounded-2xl backdrop-blur-md text-white text-center">
           <p>Tidak ada data jadwal pakan.</p>
           <button
             className="mt-4 px-4 py-2 rounded bg-blue-600 text-white"
@@ -173,7 +173,7 @@ export default function PakanDetail(): JSX.Element {
   const petugasList = petugasNama(detail?.petugas);
 
   return (
-    <div className="px-2 py-8 mt-16 md:p-8 min-h-screen bg-[linear-gradient(180deg,#0f172a, #071124)] text-white">
+    <div className="px-2 py-8 mt-16 mb-20 md:p-8 min-h-screen bg-[linear-gradient(180deg,#0f172a, #071124)] text-white">
       <div className="max-w-3xl mx-auto flex flex-col gap-6">
         {/* Header */}
         <div className="flex items-center justify-center gap-3">

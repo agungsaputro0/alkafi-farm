@@ -13,6 +13,7 @@ const Welcome = lazy(() => import('./components/pages/Welcome'));
 const LoginPage = lazy(() => import('./components/pages/Login'));
 const Home = lazy(() => import('./components/pages/Home'));
 const AboutUs = lazy(() => import('./components/pages/AboutUs'));
+const EventAndPromo = lazy(() => import('./components/pages/EventDanPromo'));
 const Catalog = lazy(() => import('./components/pages/CatalogPage'));
 const Profil = lazy(() => import('./components/pages/Profil'));
 const SignUpPage = lazy(() => import('./components/pages/SignUp'));
@@ -72,6 +73,7 @@ const App = () => {
         <Route path="/" element={<Navigate to="/Welcome" />} />
         <Route path="/Welcome" element={<RedirectIfLoggedIn><Welcome /></RedirectIfLoggedIn>} />
         <Route path="/AboutUs" element={<RedirectIfLoggedIn><AboutUs /></RedirectIfLoggedIn>} />
+        <Route path="/EventAndPromo" element={<RedirectIfLoggedIn><EventAndPromo /></RedirectIfLoggedIn>} />
         <Route path="/Catalog" element={<RedirectIfLoggedIn><Catalog /></RedirectIfLoggedIn>} />
         <Route path="/Login" element={<RedirectIfLoggedIn><LoginPage /></RedirectIfLoggedIn>} />
         <Route path="/SignUp" element={<RedirectIfLoggedIn><SignUpPage /></RedirectIfLoggedIn>} />

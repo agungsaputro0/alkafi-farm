@@ -1,0 +1,34 @@
+[
+  {
+    "idEvent": "EV001",
+    "judul": "Pelatihan Breeding Sapi Bali",
+    "foto": "/assets/img/events/event1.jpeg",
+    "deskripsi": "Pelatihan teknik breeding sapi Bali berbasis manajemen modern dan data reproduksi.",
+    "ctaLabel": "Daftar Sekarang",
+    "ctaType": "register"
+  },
+  {
+    "idEvent": "EV002",
+    "judul": "Open Farm Visit Alkafi Farm",
+    "foto": "/assets/img/events/event2.webp",
+    "deskripsi": "Kunjungan terbuka ke Alkafi Farm untuk melihat langsung sistem peternakan terpadu.",
+    "ctaLabel": "Baca Selengkapnya",
+    "ctaType": "detail"
+  },
+  {
+    "idEvent": "EV003",
+    "judul": "Konsultasi Manajemen Ternak",
+    "foto": "/assets/img/events/event3.jpg",
+    "deskripsi": "Layanan konsultasi langsung terkait kesehatan, pakan, dan reproduksi ternak.",
+    "ctaLabel": "Hubungi Kami",
+    "ctaType": "contact"
+  },
+  {
+    "idEvent": "EV004",
+    "judul": "Workshop Pakan Fermentasi",
+    "foto": "/assets/img/events/event4.jpg",
+    "deskripsi": "Workshop pembuatan pakan fermentasi untuk meningkatkan efisiensi produksi.",
+    "ctaLabel": "Hubungi Kami",
+    "ctaType": "contact"
+  }
+]

@@ -182,14 +182,14 @@ const handleSubmit = async (e: React.FormEvent) => {
         const nextNumber = parseInt(lastId.replace("RK", "")) + 1;
         nextId = `RK${String(nextNumber).padStart(3, "0")}`;
       }
-
+      const currentUser = JSON.parse(localStorage.getItem("currentUser") || "[]");
       const newData = {
         idRiwayatKesehatanTernak: nextId,
         idHewanTernak: getHewanTernakId(decryptData(neckTag || "")),
         ...formData,
         tanggalPemeriksaan: dayjs(formData.tanggalPemeriksaan).format("YYYY-MM-DD"),
         obatList,
-        perekam: neckTag, // sesuai konteks awal
+        perekam: currentUser.idPengguna, // sesuai konteks awal
         waktuRekam: new Date().toISOString(),
       };
 

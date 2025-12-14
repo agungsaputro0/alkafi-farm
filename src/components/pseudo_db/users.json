@@ -1,6 +1,20 @@
 [
   {
-    "idPengguna": "PG001",
+    "idPengguna": "PG20102025000",
+    "namaPengguna": "Tuan Bigfoot",
+    "email": "admin.dummy@binus.ac.id",
+    "password": "dummy123",
+    "jenisKelamin": "Laki-laki",
+    "nomorTelepon": "081294599861",
+    "alamat": "003/003 Bugel, Bagelen, Jawa Tengah, Indonesia 54174",
+    "active": true,
+    "avatarUrl": "/assets/img/teams/bigfoot.jpg",
+    "perekam": null,
+    "waktuRekam": "2025-10-20T08:00:00Z",
+    "idRole": 1
+  },
+  {
+    "idPengguna": "PG20102025001",
     "namaPengguna": "Agung Saputro",
     "email": "agung.saputro@binus.ac.id",
     "password": "bigfootMAX",
@@ -14,7 +28,7 @@
     "idRole": 1
   },
   {
-    "idPengguna": "PG002",
+    "idPengguna": "PG20102025002",
     "namaPengguna": "Ahmad Saefudin Zuhri",
     "email": "ahmad.zuhri@binus.ac.id",
     "password": "grizzly123",
@@ -23,12 +37,12 @@
     "alamat": "003/003 Bugel, Bagelen, Jawa Tengah, Indonesia 54174",
     "active": true,
     "avatarUrl": "/assets/img/teams/grizzly.jpg",
-    "perekam": "PG001",
+    "perekam": "PG20102025001",
     "waktuRekam": "2025-10-20T08:05:00Z",
     "idRole": 1
   },
   {
-    "idPengguna": "PG003",
+    "idPengguna": "PG20102025003",
     "namaPengguna": "Muhammad Henggargalih",
     "email": "muhammad.henggargalih@binus.ac.id",
     "password": "icebear123",
@@ -37,12 +51,12 @@
     "alamat": "003/003 Bugel, Bagelen, Jawa Tengah, Indonesia 54174",
     "active": true,
     "avatarUrl": "/assets/img/teams/icebear.jpg",
-    "perekam": "PG001",
+    "perekam": "PG20102025001",
     "waktuRekam": "2025-10-20T08:06:00Z",
     "idRole": 2
   },
   {
-    "idPengguna": "PG004",
+    "idPengguna": "PG20102025004",
     "namaPengguna": "Beby Omy Sion Saragih",
     "email": "beby.saragih@binus.ac.id",
     "password": "sion123",
@@ -51,12 +65,12 @@
     "alamat": "003/003 Bugel, Bagelen, Jawa Tengah, Indonesia 54174",
     "active": true,
     "avatarUrl": "/assets/img/teams/sion.jpg",
-    "perekam": "PG001",
+    "perekam": "PG20102025001",
     "waktuRekam": "2025-10-20T08:07:00Z",
     "idRole": 2
   },
   {
-    "idPengguna": "PG005",
+    "idPengguna": "PG20102025005",
     "namaPengguna": "Tiara Febriana Yosephine",
     "email": "tiara.yosephine@binus.ac.id",
     "password": "sephine123",
@@ -65,12 +79,12 @@
     "alamat": "003/003 Bugel, Bagelen, Jawa Tengah, Indonesia 54174",
     "active": true,
     "avatarUrl": "/assets/img/teams/sephine.jpg",
-    "perekam": "PG001",
+    "perekam": "PG20102025001",
     "waktuRekam": "2025-10-20T08:08:00Z",
     "idRole": 2
   },
   {
-    "idPengguna": "PG006",
+    "idPengguna": "PG20102025006",
     "namaPengguna": "Anisa Rahma",
     "email": "anisa.rahma@gmail.com",
     "password": "rahma04",
@@ -79,12 +93,12 @@
     "alamat": "003/003 Bugel, Bagelen, Jawa Tengah, Indonesia 54174",
     "active": true,
     "avatarUrl": "",
-    "perekam": "PG001",
+    "perekam": "PG20102025001",
     "waktuRekam": "2025-10-20T08:09:00Z",
     "idRole": 3
   },
   {
-    "idPengguna": "PG007",
+    "idPengguna": "PG20102025007",
     "namaPengguna": "Bima Ardiansyah",
     "email": "bima.ardiansyah@gmail.com",
     "password": "bima123",
@@ -93,12 +107,12 @@
     "alamat": "003/003 Bugel, Bagelen, Jawa Tengah, Indonesia 54174",
     "active": true,
     "avatarUrl": "",
-    "perekam": "PG001",
+    "perekam": "PG20102025001",
     "waktuRekam": "2025-10-20T08:10:00Z",
     "idRole": 3
   },
   {
-    "idPengguna": "PG008",
+    "idPengguna": "PG20102025008",
     "namaPengguna": "Nabila Salsabila",
     "email": "nabila.salsabila@gmail.com",
     "password": "nabila05",
@@ -107,12 +121,12 @@
     "alamat": "003/003 Bugel, Bagelen, Jawa Tengah, Indonesia 54174",
     "active": true,
     "avatarUrl": "",
-    "perekam": "PG001",
+    "perekam": "PG20102025001",
     "waktuRekam": "2025-10-20T08:11:00Z",
     "idRole": 3
   },
   {
-    "idPengguna": "PG009",
+    "idPengguna": "PG20102025009",
     "namaPengguna": "Fajar Nugroho",
     "email": "fajar.nugroho@gmail.com",
     "password": "fajar06",
@@ -121,12 +135,12 @@
     "alamat": "003/003 Bugel, Bagelen, Jawa Tengah, Indonesia 54174",
     "active": true,
     "avatarUrl": "",
-    "perekam": "PG001",
+    "perekam": "PG20102025001",
     "waktuRekam": "2025-10-20T08:12:00Z",
     "idRole": 3
   },
   {
-    "idPengguna": "PG010",
+    "idPengguna": "PG20102025010",
     "namaPengguna": "Putri Amelia",
     "email": "putri.amelia@gmail.com",
     "password": "putri07",
@@ -135,7 +149,7 @@
     "alamat": "003/003 Bugel, Bagelen, Jawa Tengah, Indonesia 54174",
     "active": true,
     "avatarUrl": "",
-    "perekam": "PG001",
+    "perekam": "PG20102025001",
     "waktuRekam": "2025-10-20T08:13:00Z",
     "idRole": 3
   }

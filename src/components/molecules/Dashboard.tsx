@@ -10,12 +10,14 @@ import WelcomingPanel from '../atoms/WelcomingPanel';
 import WhiteSection from '../atoms/WhiteSection';
 import { useAuth } from '../hooks/AuthContext';
 import { useNavigate } from 'react-router-dom';
+import WarningPanel from '../atoms/WarningPanel';
 const Dashboard = () => {
   const navigate = useNavigate();
   const { userName } = useAuth();
   return (
     <section>
       <div className="pt-16 flex justify-center mb-20 mx-4" style={{ paddingLeft: '80px' }}>
+        <WarningPanel />
         <MainPanel>
           <WhiteSection>
             <div className="relative p-0 mb-[30px] overflow-hidden rounded-xl 

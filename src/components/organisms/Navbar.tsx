@@ -7,7 +7,7 @@ const mainNav = [
   { name: 'Beranda', to: '/Welcome' },
   { name: 'Katalog', to: '/Catalog' },
   { name: 'Tentang', to: '/AboutUs' },
-  { name: 'Event & Promo', to: '#' },
+  { name: 'Event & Promo', to: '/EventAndPromo' },
 ];
 
 const rightNav = [

@@ -201,7 +201,7 @@ const filteredData = hewanTernakData
       <MainPanel>
         <div className="px-6">
           <p className="text-white font-semibold">
-            <span onClick={() => navigate("/ternak/repository")} className="text-white/50 hover:text-kemenkeuyellow cursor-pointer">Hewan Ternak • </span> Kesehatan Ternak
+            <span onClick={() => navigate("/ternak/repository")} className="text-white/50 hover:text-kemenkeuyellow cursor-pointer">Hewan Ternak • </span> Penimbangan
           </p>
         </div>
 

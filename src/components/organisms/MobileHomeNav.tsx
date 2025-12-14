@@ -9,7 +9,7 @@ const MobileBottomNav = () => {
     <div className="fixed bottom-0 left-0 w-full bg-farmLightOrange border-t border-gray-300 shadow-md sm:hidden z-50">
       <div className="flex justify-around items-center relative py-2">
         <Link
-          to="/Welcome"
+          to="#"
           className="flex-1 flex flex-col items-center text-farmdarkbrown hover:text-gray-800 text-center"
         >
           <FaHome size={24} />
@@ -17,7 +17,7 @@ const MobileBottomNav = () => {
         </Link>
 
          <Link
-          to="/Blog"
+          to="#"
           className="flex-1 flex flex-col items-center text-farmdarkbrown hover:text-gray-800 text-center"
         >
           <GiGoat size={24} />
@@ -35,7 +35,7 @@ const MobileBottomNav = () => {
         </Link>
 
         <Link
-          to="/Contact"
+          to="#"
           className="flex-1 flex flex-col items-center text-farmdarkbrown hover:text-gray-800 text-center"
         >
           <BiTask size={24} />
@@ -44,7 +44,7 @@ const MobileBottomNav = () => {
 
         
         <Link
-          to="/Login"
+          to="#"
           className="flex-1 flex flex-col items-center text-farmdarkbrown hover:text-gray-800 text-center"
         >
           <PiUserCircleDuotone size={24} />

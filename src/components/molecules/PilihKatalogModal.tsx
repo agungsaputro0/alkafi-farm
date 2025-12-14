@@ -64,7 +64,7 @@ const PilihKatalogModal: React.FC<Props> = ({
           <IoClose size={28} />
         </button>
 
-        <h2 className="text-xl font-bold text-center mb-4">Pilih Hewan Ternak</h2>
+        <h2 className="text-xl font-bold text-center mb-4">Pilih Produk</h2>
 
         {/* Search Bar */}
         <div className="flex items-center gap-2 border rounded-lg px-3 py-2 mb-4 bg-gray-50 focus-within:ring-2 focus-within:ring-farmdarkbrown transition">
@@ -143,7 +143,7 @@ const PilihKatalogModal: React.FC<Props> = ({
                     ${tidakBisaPilih ? "opacity-50 cursor-not-allowed" : "hover:bg-farmdarkestbrown"}
                   `}
                 >
-                  {tidakBisaPilih ? "Stok Habis" : "Pilih Hewan"}
+                  {tidakBisaPilih ? "Stok Habis" : "Pilih Produk"}
                 </button>
               </div>
             );

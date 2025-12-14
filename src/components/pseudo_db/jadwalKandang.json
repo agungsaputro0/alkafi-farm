@@ -8,7 +8,7 @@
     "jenisPembersihan": "Pembersihan Lantai & Penggantian Alas",
     "peralatanDanBahan": "Sapu lantai\nSekop kotoran\nAlas kering baru",
     "catatan": "Prioritas karena kondisi kandang ramai",
-    "petugas": ["PG006", "PG009"]
+    "petugas": ["PG20102025006", "PG20102025009"]
   },
   {
     "idJadwal": "JK002",
@@ -19,7 +19,7 @@
     "jenisPembersihan": "Sanitasi Tempat Pakan & Minum",
     "peralatanDanBahan": "Sikat halus\nLarutan disinfektan",
     "catatan": null,
-    "petugas": ["PG007"]
+    "petugas": ["PG20102025007"]
   },
   {
     "idJadwal": "JK003",
@@ -30,7 +30,7 @@
     "jenisPembersihan": "Pengecekan Ventilasi & Penyemprotan Insektisida",
     "peralatanDanBahan": "Alat semprot insektisida\nSarung tangan\nMasker pelindung",
     "catatan": "Kandang sedang menjalani perbaikan ringan",
-    "petugas": ["PG008", "PG010"]
+    "petugas": ["PG20102025008", "PG20102025010"]
   },
   {
     "idJadwal": "JK004",
@@ -41,6 +41,6 @@
     "jenisPembersihan": "Deep Cleaning Total",
     "peralatanDanBahan": "Sikat besar\nLarutan disinfektan\nAlat cuci tekanan tinggi",
     "catatan": "Dilakukan sesuai permintaan supervisor",
-    "petugas": ["PG006", "PG007", "PG010"]
+    "petugas": ["PG20102025006", "PG20102025007", "PG20102025010"]
   }
 ]

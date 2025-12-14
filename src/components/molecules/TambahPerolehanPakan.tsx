@@ -74,7 +74,6 @@ const handleSubmit = async (e: React.FormEvent) => {
         "supplier",
         "jumlahMasuk",
         "satuan",
-        "totalHarga",
     ];
 
     const isValid = requiredFields.every(
@@ -152,7 +151,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             );
 
         setTimeout(() => {
-            navigate("/GudangObat"); 
+            navigate("/StokPakan"); 
         }, 1500);
 
         } catch (error) {

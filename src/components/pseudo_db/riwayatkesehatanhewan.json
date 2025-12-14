@@ -7,7 +7,7 @@
     "diagnosa": "Infeksi saluran pernapasan ringan",
     "tindakan": "Diberikan antibiotik ringan dan vitamin",
     "catatan": "Dipantau selama 3 hari",
-    "perekam": "PG003",
+    "perekam": "PG20102025003",
     "waktuRekam": "2025-01-14T08:30:00Z"
   },
   {
@@ -18,7 +18,7 @@
     "diagnosa": "Gangguan pencernaan",
     "tindakan": "Diberikan probiotik dan pengatur pakan",
     "catatan": "Kondisi membaik setelah 2 hari",
-    "perekam": "PG004",
+    "perekam": "PG20102025004",
     "waktuRekam": "2025-02-03T09:45:00Z"
   },
   {
@@ -29,7 +29,7 @@
     "diagnosa": "Demam akibat infeksi parasit",
     "tindakan": "Diberikan antiparasit dan cairan elektrolit",
     "catatan": null,
-    "perekam": "PG005",
+    "perekam": "PG20102025005",
     "waktuRekam": "2025-02-18T10:00:00Z"
   },
   {
@@ -40,7 +40,7 @@
     "diagnosa": "Cacingan berat",
     "tindakan": "Diberikan obat cacing dan diet tinggi serat",
     "catatan": "Disarankan pemeriksaan ulang 1 minggu",
-    "perekam": "PG004",
+    "perekam": "PG20102025004",
     "waktuRekam": "2025-03-10T07:50:00Z"
   },
   {
@@ -51,7 +51,7 @@
     "diagnosa": "Cedera sendi ringan",
     "tindakan": "Diberikan salep pereda nyeri dan istirahatkan",
     "catatan": "Perlu periksa ulang jika tidak membaik",
-    "perekam": "PG003",
+    "perekam": "PG20102025003",
     "waktuRekam": "2025-03-21T11:10:00Z"
   },
   {
@@ -62,7 +62,7 @@
     "diagnosa": "Pneumonia",
     "tindakan": "Diberikan antibiotik dan terapi cairan",
     "catatan": null,
-    "perekam": "PG005",
+    "perekam": "PG20102025005",
     "waktuRekam": "2025-04-02T08:00:00Z"
   },
   {
@@ -73,7 +73,7 @@
     "diagnosa": "Infeksi jamur kulit",
     "tindakan": "Diberikan salep antijamur dan antiseptik",
     "catatan": "Area luka dibersihkan setiap pagi",
-    "perekam": "PG004",
+    "perekam": "PG20102025004",
     "waktuRekam": "2025-04-15T09:15:00Z"
   },
   {
@@ -84,7 +84,7 @@
     "diagnosa": "Infeksi mulut (stomatitis)",
     "tindakan": "Diberikan antiseptik mulut dan pakan lembut",
     "catatan": "Sembuh setelah 4 hari",
-    "perekam": "PG003",
+    "perekam": "PG20102025003",
     "waktuRekam": "2025-05-07T06:30:00Z"
   },
   {
@@ -95,7 +95,7 @@
     "diagnosa": "Diare akibat pakan basi",
     "tindakan": "Hentikan pakan lama, berikan oralit",
     "catatan": "Cegah dengan kontrol pakan",
-    "perekam": "PG005",
+    "perekam": "PG20102025005",
     "waktuRekam": "2025-05-22T13:45:00Z"
   },
   {
@@ -106,7 +106,7 @@
     "diagnosa": "Infeksi kuku (foot rot)",
     "tindakan": "Kuku dibersihkan dan diberi antiseptik",
     "catatan": null,
-    "perekam": "PG004",
+    "perekam": "PG20102025004",
     "waktuRekam": "2025-06-04T07:20:00Z"
   },
   {
@@ -117,7 +117,7 @@
     "diagnosa": "Kekurangan mineral",
     "tindakan": "Diberikan suplemen mineral cair",
     "catatan": "Tambahkan garam mineral di kandang",
-    "perekam": "PG003",
+    "perekam": "PG20102025003",
     "waktuRekam": "2025-06-20T10:40:00Z"
   },
   {
@@ -128,7 +128,7 @@
     "diagnosa": "Gigitan serangga",
     "tindakan": "Diberikan obat oles dan semprot anti serangga",
     "catatan": null,
-    "perekam": "PG004",
+    "perekam": "PG20102025004",
     "waktuRekam": "2025-07-03T12:10:00Z"
   },
   {
@@ -139,7 +139,7 @@
     "diagnosa": "Kelelahan pasca melahirkan",
     "tindakan": "Diberikan vitamin dan cairan tambahan",
     "catatan": "Kondisi membaik setelah 3 hari",
-    "perekam": "PG005",
+    "perekam": "PG20102025005",
     "waktuRekam": "2025-07-15T08:50:00Z"
   },
   {
@@ -150,7 +150,7 @@
     "diagnosa": "Infeksi bakteri ringan",
     "tindakan": "Diberikan antibiotik selama 3 hari",
     "catatan": "Pantau suhu tubuh setiap hari",
-    "perekam": "PG004",
+    "perekam": "PG20102025004",
     "waktuRekam": "2025-08-02T09:05:00Z"
   },
   {
@@ -161,7 +161,7 @@
     "diagnosa": "Iritasi ringan",
     "tindakan": "Dibersihkan dan diberi salep antiseptik",
     "catatan": null,
-    "perekam": "PG003",
+    "perekam": "PG20102025003",
     "waktuRekam": "2025-09-11T10:25:00Z"
   }
 ]
